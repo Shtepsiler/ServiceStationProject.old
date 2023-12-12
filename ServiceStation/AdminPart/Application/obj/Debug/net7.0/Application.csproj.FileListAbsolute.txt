@@ -1,0 +1,45 @@
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\bin\Debug\net7.0\Application.deps.json
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\bin\Debug\net7.0\Application.dll
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\bin\Debug\net7.0\Application.pdb
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\bin\Debug\net7.0\Domain.dll
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\bin\Debug\net7.0\Domain.pdb
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.csproj.AssemblyReference.cache
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.AssemblyInfoInputs.cache
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.AssemblyInfo.cs
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.csproj.CoreCompileInputs.cache
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.csproj.CopyComplete
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.dll
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\obj\Debug\net7.0\refint\Application.dll
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.pdb
+C:\Навчання\OOP\Service station clear\ServiceStation\Application\obj\Debug\net7.0\ref\Application.dll
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.csproj.AssemblyReference.cache
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.AssemblyInfoInputs.cache
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.AssemblyInfo.cs
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.csproj.CoreCompileInputs.cache
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.dll
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\obj\Debug\net7.0\refint\Application.dll
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.pdb
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\bin\Debug\net7.0\Application.deps.json
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\bin\Debug\net7.0\Application.dll
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\bin\Debug\net7.0\Application.pdb
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\bin\Debug\net7.0\Domain.dll
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\bin\Debug\net7.0\Domain.pdb
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\obj\Debug\net7.0\Application.csproj.CopyComplete
+C:\Навчання\OOP\project\project\Service station clear\ServiceStation\Application\obj\Debug\net7.0\ref\Application.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\bin\Debug\net7.0\Application.deps.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\bin\Debug\net7.0\Application.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\bin\Debug\net7.0\Application.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\bin\Debug\net7.0\Domain.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\bin\Debug\net7.0\Domain.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\obj\Debug\net7.0\Application.csproj.AssemblyReference.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\obj\Debug\net7.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\obj\Debug\net7.0\Application.AssemblyInfoInputs.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\obj\Debug\net7.0\Application.AssemblyInfo.cs
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\obj\Debug\net7.0\Application.csproj.CoreCompileInputs.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\obj\Debug\net7.0\Application.csproj.CopyComplete
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\obj\Debug\net7.0\Application.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\obj\Debug\net7.0\refint\Application.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\obj\Debug\net7.0\Application.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\obj\Debug\net7.0\ref\Application.dll

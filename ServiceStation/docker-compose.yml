@@ -1,0 +1,92 @@
+version: '3.4'
+networks:
+  ServiceStationNetwork:
+
+services:
+
+  webapplicationdatabase:
+    container_name: webapplicationdatabase
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Qwerty123
+    networks:
+      - ServiceStationNetwork
+    ports:
+      - 1443:1433  
+      
+  taskmanagerformechanicdatabase:
+    container_name: taskmanagerformechanicdatabase
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Qwerty123
+    networks:
+      - ServiceStationNetwork
+    ports:
+      - 1423:1433
+
+  servicestationapirediscash:
+    container_name: servicestationapirediscash
+    image: redis:7
+    networks:
+      - ServiceStationNetwork
+    ports:
+      - 6379:6379
+  
+  servicestationapidatabase:
+    container_name: servicestationapidatabase
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Qwerty123
+    networks:
+      - ServiceStationNetwork
+    ports:
+      - 1433:1433
+
+
+
+  servicestation.api:
+    image: ${DOCKER_REGISTRY-}servicestationapi
+    build:
+      context: .
+      dockerfile: ClientPart/ServiceStation.API/Dockerfile
+    networks:
+      - ServiceStationNetwork
+    ports:
+      - 2030:80
+    environment:
+      - REDIS=servicestationapirediscash
+      - DB_HOST=servicestationapidatabase
+      - DB_NAME=ServiceStation
+      - DB_SA_PASSWORD=Qwerty123
+  
+      
+  taskmanagerformechanic.web:
+    image: ${DOCKER_REGISTRY-}taskmanagerformechanicweb
+    build:
+      context: .
+      dockerfile: MechanicPart/TaskManagerForMechanic.WEB/Dockerfile
+    networks:
+         - ServiceStationNetwork
+    ports:
+      - 2020:80
+    environment:
+      - DB_HOST=taskmanagerformechanicdatabase
+      - DB_NAME=ServiceStation
+      - DB_SA_PASSWORD=Qwerty123
+
+  webapplication:
+    image: ${DOCKER_REGISTRY-}webapplication
+    build:
+      context: .
+      dockerfile: AdminPart/WebApplication/Dockerfile
+    networks:
+         - ServiceStationNetwork
+    ports:
+      - 2040:80
+    environment:
+      - DB_HOST=webapplicationdatabase
+      - DB_NAME=ServiceStation
+      - DB_SA_PASSWORD=Qwerty123

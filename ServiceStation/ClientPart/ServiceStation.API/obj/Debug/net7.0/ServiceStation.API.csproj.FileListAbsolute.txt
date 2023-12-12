@@ -1,0 +1,392 @@
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\appsettings.Development.json
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\appsettings.json
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.exe
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.deps.json
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.runtimeconfig.json
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.pdb
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\AutoMapper.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Azure.Core.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Azure.Identity.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\FluentValidation.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Humanizer.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.CodeDom.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.IO.Packaging.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.BLL.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.DAL.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.BLL.pdb
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.DAL.pdb
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.csproj.AssemblyReference.cache
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.AssemblyInfoInputs.cache
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.AssemblyInfo.cs
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.csproj.CoreCompileInputs.cache
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.ServiceStation.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.build.ServiceStation.API.props
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ServiceStation.API.props
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ServiceStation.API.props
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets.build.json
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets.development.json
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\scopedcss\bundle\ServiceStation.API.styles.css
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.csproj.CopyComplete
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\refint\ServiceStation.API.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.pdb
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.genruntimeconfig.cache
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ref\ServiceStation.API.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\appsettings.Development.json
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\appsettings.json
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.exe
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.deps.json
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.runtimeconfig.json
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.pdb
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\AutoMapper.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Azure.Core.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Azure.Identity.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\FluentValidation.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Humanizer.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.CodeDom.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.IO.Packaging.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.BLL.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.BLL.pdb
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.DAL.pdb
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.csproj.AssemblyReference.cache
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.AssemblyInfoInputs.cache
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.AssemblyInfo.cs
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.csproj.CoreCompileInputs.cache
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.ServiceStation.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.build.ServiceStation.API.props
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ServiceStation.API.props
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ServiceStation.API.props
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets.build.json
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets.development.json
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\scopedcss\bundle\ServiceStation.API.styles.css
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.csproj.CopyComplete
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\refint\ServiceStation.API.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.pdb
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.genruntimeconfig.cache
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ref\ServiceStation.API.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\appsettings.Development.json
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\appsettings.json
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.exe
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.deps.json
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.runtimeconfig.json
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.pdb
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\AutoMapper.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Azure.Core.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Azure.Identity.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\FluentValidation.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Humanizer.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.CodeDom.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.IO.Packaging.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.BLL.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.BLL.pdb
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\ServiceStation.DAL.pdb
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.csproj.AssemblyReference.cache
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.AssemblyInfoInputs.cache
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.AssemblyInfo.cs
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.csproj.CoreCompileInputs.cache
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.ServiceStation.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.build.ServiceStation.API.props
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ServiceStation.API.props
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ServiceStation.API.props
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets.build.json
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\staticwebassets.development.json
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\scopedcss\bundle\ServiceStation.API.styles.css
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.csproj.CopyComplete
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\refint\ServiceStation.API.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.pdb
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.genruntimeconfig.cache
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\obj\Debug\net7.0\ref\ServiceStation.API.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\StackExchange.Redis.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.API\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\appsettings.Development.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\appsettings.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.exe
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.deps.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.runtimeconfig.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\ServiceStation.API.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\AutoMapper.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Azure.Core.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Azure.Identity.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\FluentValidation.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Humanizer.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\StackExchange.Redis.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\System.CodeDom.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\System.IO.Packaging.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\ServiceStation.BLL.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\ServiceStation.BLL.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\ServiceStation.DAL.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.csproj.AssemblyReference.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.AssemblyInfoInputs.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.AssemblyInfo.cs
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.csproj.CoreCompileInputs.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.ServiceStation.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.build.ServiceStation.API.props
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ServiceStation.API.props
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ServiceStation.API.props
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\staticwebassets.build.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\staticwebassets.development.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\scopedcss\bundle\ServiceStation.API.styles.css
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.csproj.CopyComplete
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\refint\ServiceStation.API.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.genruntimeconfig.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ref\ServiceStation.API.dll

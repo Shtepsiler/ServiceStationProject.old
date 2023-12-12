@@ -1,0 +1,166 @@
+name: dockercompose431493579175213511
+services:
+  servicestation.api:
+    build:
+      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
+      dockerfile: ClientPart/ServiceStation.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DB_HOST: servicestationapidatabase
+      DB_NAME: ServiceStation
+      DB_SA_PASSWORD: Qwerty123
+      REDIS: servicestationapidatabase
+    image: servicestationapi
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        protocol: tcp
+      - mode: ingress
+        target: 80
+        published: "2030"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  servicestationapidatabase:
+    container_name: servicestationapi.database
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: Qwerty123
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+  servicestationapirediscash:
+    container_name: servicestationapi.rediscach
+    image: redis:7
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+  taskmanagerformechanic.web:
+    build:
+      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
+      dockerfile: MechanicPart/TaskManagerForMechanic.WEB/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DB_HOST: taskmanagerformechanicdatabase
+      DB_NAME: ServiceStation
+      DB_SA_PASSWORD: Qwerty123
+    image: taskmanagerformechanicweb
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        protocol: tcp
+      - mode: ingress
+        target: 80
+        published: "2020"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  taskmanagerformechanicdatabase:
+    container_name: taskmanagerformechanic.database
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: Qwerty123
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1423"
+        protocol: tcp
+  webapplication:
+    build:
+      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
+      dockerfile: AdminPart/WebApplication/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DB_HOST: webapplicationdatabase
+      DB_NAME: ServiceStation
+      DB_SA_PASSWORD: Qwerty123
+    image: webapplication
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        protocol: tcp
+      - mode: ingress
+        target: 80
+        published: "2040"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  webapplicationdatabase:
+    container_name: webapplication.database
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: Qwerty123
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1443"
+        protocol: tcp
+networks:
+  ServiceStationNetwork:
+    name: dockercompose431493579175213511_ServiceStationNetwork

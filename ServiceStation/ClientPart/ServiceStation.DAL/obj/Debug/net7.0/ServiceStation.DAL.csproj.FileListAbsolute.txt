@@ -1,0 +1,56 @@
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.deps.json
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.runtimeconfig.json
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.pdb
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.csproj.AssemblyReference.cache
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.AssemblyInfoInputs.cache
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.AssemblyInfo.cs
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.csproj.CoreCompileInputs.cache
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\refint\ServiceStation.DAL.dll
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.pdb
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.genruntimeconfig.cache
+C:\Навчання\OOP\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ref\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.deps.json
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.runtimeconfig.json
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.pdb
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.csproj.AssemblyReference.cache
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.AssemblyInfoInputs.cache
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.AssemblyInfo.cs
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.csproj.CoreCompileInputs.cache
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\refint\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.pdb
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.genruntimeconfig.cache
+C:\Навчання\OOP\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ref\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.deps.json
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.runtimeconfig.json
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.pdb
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.csproj.AssemblyReference.cache
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.AssemblyInfoInputs.cache
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.AssemblyInfo.cs
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.csproj.CoreCompileInputs.cache
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\refint\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.pdb
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.genruntimeconfig.cache
+C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceStation EF\ServiceStation.DAL\obj\Debug\net7.0\ref\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.deps.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.runtimeconfig.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.DAL\bin\Debug\net7.0\ServiceStation.DAL.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.csproj.AssemblyReference.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.AssemblyInfoInputs.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.AssemblyInfo.cs
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.csproj.CoreCompileInputs.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.DAL\obj\Debug\net7.0\refint\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.DAL\obj\Debug\net7.0\ServiceStation.DAL.genruntimeconfig.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.DAL\obj\Debug\net7.0\ref\ServiceStation.DAL.dll

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "AZwQqrqXAtIs5U7Lu9gDMx4wcnl4/+mkVdqG4zAaozs=",
+  "Source": "ServiceStation.API",
+  "BasePath": "_content/ServiceStation.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
