@@ -13,7 +13,6 @@ namespace Application.Operations.Models.Commands
     public class CreateJobCommandHandler : IRequestHandler<CreateModelCommand, int>
     {
         private readonly IServiceStationDContext _context;
-
         public CreateJobCommandHandler(IServiceStationDContext context)
         {
             _context = context;

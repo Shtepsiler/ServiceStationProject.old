@@ -3,6 +3,7 @@ using Azure.Core;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
 using ServiceStation.BLL.DTO.Requests;
 using ServiceStation.BLL.DTO.Responses;
 using ServiceStation.BLL.Services;
@@ -16,6 +17,8 @@ namespace ServiceStation.API.Controllers
     [ApiController]
     public class ClientController : ControllerBase
     {
+        private readonly IDistributedCache distributedCache;
+
         private IUnitOfWork _UnitOfWork;
         private IUnitOfBisnes _UnitOfBisnes;
         private IMapper _mapper;
@@ -25,12 +28,14 @@ namespace ServiceStation.API.Controllers
              IUnitOfWork UnitOfWork,
              IUnitOfBisnes UnitOfBisnes,
              IMapper mapper
-            )
+,
+             IDistributedCache distributedCache)
         {
             _logger = logger;
             _UnitOfWork = UnitOfWork;
             _UnitOfBisnes = UnitOfBisnes;
             _mapper = mapper;
+            this.distributedCache = distributedCache;
         }
 
 

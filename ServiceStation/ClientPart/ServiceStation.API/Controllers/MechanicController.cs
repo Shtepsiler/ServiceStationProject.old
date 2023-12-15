@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
+using Newtonsoft.Json;
 using ServiceStation.BLL.DTO.Responses;
 using ServiceStation.BLL.Services.Interfaces;
+using System.Text;
 
 namespace ServiceStation.API.Controllers
 {
@@ -15,15 +18,18 @@ namespace ServiceStation.API.Controllers
 
 
         private IUnitOfBisnes _UnitOfBisnes;
+        private readonly IDistributedCache distributedCache;
 
         private readonly ILogger<MechanicController> _logger;
         public MechanicController(
             ILogger<MechanicController> logger,
              IUnitOfBisnes UnitOfBisnes
-            )
+,
+             IDistributedCache distributedCache)
         {
             _logger = logger;
             _UnitOfBisnes = UnitOfBisnes;
+            this.distributedCache = distributedCache;
         }
 
 
@@ -33,15 +39,32 @@ namespace ServiceStation.API.Controllers
         {
             try
             {
-                var results = await _UnitOfBisnes._MechanicService.GetAllAsync();
-
-
-                _logger.LogInformation($"Отримали всі івенти з бази даних!");
-                return Ok(results);
+                var cacheKey = "mechanicList";
+                string serializedMechanicList;
+                var mechanicList = new List<MechanicPublicResponse>();
+                var redisMechanicList = await distributedCache.GetAsync(cacheKey);
+                if (redisMechanicList != null)
+                {
+                    serializedMechanicList = Encoding.UTF8.GetString(redisMechanicList);
+                    mechanicList = JsonConvert.DeserializeObject<List<MechanicPublicResponse>>(serializedMechanicList);
+                }
+                else
+                {
+                    mechanicList = (List<MechanicPublicResponse>)await _UnitOfBisnes._MechanicService.GetAllAsync();
+                    serializedMechanicList = JsonConvert.SerializeObject(mechanicList);
+                    redisMechanicList = Encoding.UTF8.GetBytes(serializedMechanicList);
+                    var options = new DistributedCacheEntryOptions()
+                        .SetAbsoluteExpiration(DateTime.Now.AddMinutes(5))
+                        .SetSlidingExpiration(TimeSpan.FromMinutes(1));
+                    await distributedCache.SetAsync(cacheKey, redisMechanicList, options);
+                }
+                _logger.LogInformation($"MechanicController            GetAllAsync");
+                return Ok(mechanicList);
+               
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Транзакція сфейлилась! Щось пішло не так у методі GetAllAsync() - {ex.Message}");
+                _logger.LogError($"{ex.Message}");
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
@@ -61,14 +84,14 @@ namespace ServiceStation.API.Controllers
                 }
                 else
                 {
-                    _logger.LogInformation($"Отримали механіка з бази даних!");
+                    _logger.LogInformation($"MechanicController            GetByIdDetailedAsync");
                     return Ok(result);
                 }
 
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Транзакція сфейлилась! Щось пішло не так у методі GetByIdDetailedAsync() - {ex.Message}");
+                _logger.LogError($"{ex.Message}");
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }

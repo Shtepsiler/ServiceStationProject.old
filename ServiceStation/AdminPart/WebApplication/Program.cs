@@ -1,4 +1,3 @@
-using Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.Persistence.Data;
@@ -15,7 +14,12 @@ using System.Text;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.DependencyInjection;
 using Infrastructure.Persistence.Services;
-
+using MassTransit;
+using Microsoft.Extensions.Options;
+using WebApplication.MessageBroker.EventBus;
+using WebApplication.MessageBroker;
+using Application.EventBusConsumers;
+using Domain.Entities;
 var builder = Microsoft.AspNetCore.Builder.WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -24,6 +28,38 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddScoped<ITokenService, TokenService>();
+
+
+builder.Services.Configure<MessageBrokerSettings>(
+          builder.Configuration.GetSection("MessageBroker"));
+
+builder.Services.AddSingleton(sp =>
+sp.GetRequiredService<IOptions<MessageBrokerSettings>>().Value);
+
+builder.Services.AddTransient<IEventBus, EventBus>();
+builder.Services.AddMassTransit(busconf =>
+{
+    busconf.SetKebabCaseEndpointNameFormatter();
+    busconf.AddConsumer<ModelConsumer>();
+    busconf.UsingRabbitMq((cont, conf) =>
+    {
+        MessageBrokerSettings settings = cont.GetRequiredService<MessageBrokerSettings>();
+
+        conf.Host(new Uri(settings.Host), h =>
+        {
+            h.Username(settings.Username);
+            h.Password(settings.Password);
+
+        });
+        
+        conf.ReceiveEndpoint(nameof(GeneralBusMessages.Message.Model), e =>
+            {
+                e.ConfigureConsumer(cont,typeof(ModelConsumer));
+            });
+    });  
+
+  
+});
 
 
 var securityScheme = new OpenApiSecurityScheme()
@@ -127,20 +163,21 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddMemoryCache(opt => new MemoryCacheEntryOptions()
 {
-    AbsoluteExpiration = DateTime.Now.AddMinutes(5),
+    AbsoluteExpiration = DateTime.Now.AddSeconds(30),
     Priority = CacheItemPriority.High,
-    SlidingExpiration = TimeSpan.FromMinutes(2)
-});
+    SlidingExpiration = TimeSpan.FromSeconds(20)
+}) ;
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+/*if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
-
+}*/
+app.UseSwagger();
+app.UseSwaggerUI();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

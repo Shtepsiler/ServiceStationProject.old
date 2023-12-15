@@ -1,0 +1,22 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "client",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "2030"
+        }
+      ],
+      "UpstreamPathTemplate": "/client/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    }
+  ]
+}

@@ -7,13 +7,13 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["WebApplication/WebApplication.csproj", "WebApplication/"]
-COPY ["Application/Application.csproj", "Application/"]
-COPY ["Domain/Domain.csproj", "Domain/"]
-COPY ["Infrastructure/Infrastructure.csproj", "Infrastructure/"]
-RUN dotnet restore "WebApplication/WebApplication.csproj"
+COPY ["AdminPart/WebApplication/WebApplication.csproj", "AdminPart/WebApplication/"]
+COPY ["AdminPart/Application/Application.csproj", "AdminPart/Application/"]
+COPY ["AdminPart/Domain/Domain.csproj", "AdminPart/Domain/"]
+COPY ["AdminPart/Infrastructure/Infrastructure.csproj", "AdminPart/Infrastructure/"]
+RUN dotnet restore "AdminPart/WebApplication/WebApplication.csproj"
 COPY . .
-WORKDIR "/src/WebApplication"
+WORKDIR "/src/AdminPart/WebApplication"
 RUN dotnet build "WebApplication.csproj" -c Release -o /app/build
 
 FROM build AS publish

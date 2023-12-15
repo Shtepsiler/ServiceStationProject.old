@@ -6,7 +6,8 @@
       "serviceActions": {
         "servicestation.api": "StartDebugging",
         "taskmanagerformechanic.web": "StartDebugging",
-        "webapplication": "StartDebugging"
+        "webapplication": "StartDebugging",
+        "api.gateway": "StartDebugging"
       }
     }
   }

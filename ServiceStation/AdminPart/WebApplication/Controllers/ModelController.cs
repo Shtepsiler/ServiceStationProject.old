@@ -9,21 +9,24 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using System.Runtime.CompilerServices;
+using WebApplication.MessageBroker.EventBus;
 
 namespace WebApplication.Controllers
 {
-    [Authorize]
+  
     [Route("api/[controller]")]
     [ApiController]
     public class ModelController : ControllerBase
     {
-        public IMediator Mediator { get; }
+       
+        private IMediator Mediator { get; }
         private readonly IMemoryCache MemoryCache;
 
         public ModelController(IMediator mediator, IMemoryCache memoryCache)
         {
             Mediator = mediator;
             MemoryCache = memoryCache;
+           
         }
 
         [HttpDelete("{id}")]

@@ -8,6 +8,7 @@ namespace TaskManagerForMechanic.DAL
     {
         public TaskManagerDbContext(DbContextOptions<TaskManagerDbContext> contextOptions) : base(contextOptions)
         {
+            Database.EnsureCreated();
         }
 
 

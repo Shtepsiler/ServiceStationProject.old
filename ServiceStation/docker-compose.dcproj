@@ -3,10 +3,10 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>a9564b5e-61ff-4ce0-88dc-fe41a0e4da07</ProjectGuid>
+    <ProjectGuid>2eaa8eb3-8eb5-4790-9882-16299a3e41b9</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
-    <DockerServiceName>servicestation.api</DockerServiceName>
+    <DockerServiceName>webapplication</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">

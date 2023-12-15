@@ -1,8 +1,13 @@
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using TaskManagerForMechanic.DAL;
 using TaskManagerForMechanic.WEB.GraphQl;
 using TaskManagerForMechanic.WEB.GraphQl.DataLoader;
 using TaskManagerForMechanic.WEB.GraphQl.Types;
+using TaskManagerForMechanic.WEB.MessageBroker;
+using TaskManagerForMechanic.WEB.MessageBroker.Concumers;
+using TaskManagerForMechanic.WEB.MessageBroker.EventBus;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,8 +26,61 @@ builder.Services.AddPooledDbContextFactory<TaskManagerDbContext>(options =>
    
 
 });
+builder.Services.AddDbContext<TaskManagerDbContext>(options =>
+{
+    var dbhost = Environment.GetEnvironmentVariable("DB_HOST");
+    var dbname = Environment.GetEnvironmentVariable("DB_NAME");
+    var dbpass = Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
 
 
+    string connectionString = $"Data Source={dbhost};User ID=sa;Password={dbpass};Initial Catalog={dbname};Encrypt=True;Trust Server Certificate=True;";
+    //  string connectionString = builder.Configuration.GetConnectionString("MSSQLConnection");
+    options.UseSqlServer(connectionString);
+
+
+});
+
+
+builder.Services.Configure<MessageBrokerSettings>(
+          builder.Configuration.GetSection("MessageBroker"));
+
+builder.Services.AddSingleton(sp =>
+sp.GetRequiredService<IOptions<MessageBrokerSettings>>().Value);
+
+builder.Services.AddTransient<IEventBus, EventBus>();
+builder.Services.AddMassTransit(busconf =>
+{
+    busconf.SetKebabCaseEndpointNameFormatter();
+    busconf.AddConsumer<JobConsumer>();
+    busconf.AddConsumer<MechanicTaskConsumer>();
+
+
+
+
+    busconf.UsingRabbitMq((cont, conf) =>
+    {
+        MessageBrokerSettings settings = cont.GetRequiredService<MessageBrokerSettings>();
+
+        conf.Host(new Uri(settings.Host), h =>
+        {
+            h.Username(settings.Username);
+            h.Password(settings.Password);
+
+        });
+
+        conf.ReceiveEndpoint(nameof(GeneralBusMessages.Message.Job), e =>
+        {
+            e.ConfigureConsumer(cont, typeof(JobConsumer));
+ 
+        }); 
+        conf.ReceiveEndpoint(nameof(GeneralBusMessages.Message.MechanicsTasks), e =>
+        {
+            e.ConfigureConsumer(cont, typeof(MechanicTaskConsumer));
+        });
+    });
+
+
+});
 
 
 

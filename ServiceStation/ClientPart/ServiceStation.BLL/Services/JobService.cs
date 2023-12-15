@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using MassTransit;
 using ServiceStation.BLL.DTO.Requests;
 using ServiceStation.BLL.DTO.Responses;
+using ServiceStation.BLL.EventBus;
 using ServiceStation.BLL.Mapping;
 using ServiceStation.BLL.Services.Interfaces;
 using ServiceStation.DAL.Entities;
@@ -13,11 +15,12 @@ namespace ServiceStation.BLL.Services
     {
         public readonly IUnitOfWork _unitOfWork;
         public readonly IMapper _maper;
-
-        public JobService(IUnitOfWork unitOfWork, IMapper maper)
+       // private readonly IEventBus eventBus;
+        public JobService(IUnitOfWork unitOfWork, IMapper maper/*, IEventBus eventBus*/)
         {
             _unitOfWork = unitOfWork;
             _maper = maper;
+          //  this.eventBus = eventBus;
         }
 
         public async Task<IEnumerable<JobResponse>> GetAllAsync()
@@ -29,7 +32,7 @@ namespace ServiceStation.BLL.Services
             }
             catch (Exception ex)
             {
-                return null;
+                throw ex;
             }
         }
         public async Task<IEnumerable<ClientsJobsResponse>> GetAllClientsJobsAsync(int clientId)
@@ -43,7 +46,7 @@ namespace ServiceStation.BLL.Services
             }
             catch (Exception ex)
             {
-                return null;
+                throw ex;
             }
         }
 
@@ -65,7 +68,7 @@ namespace ServiceStation.BLL.Services
             }
             catch (Exception ex)
             {
-                return null;
+                throw ex;
             }
         }
 
@@ -110,9 +113,22 @@ namespace ServiceStation.BLL.Services
 
                 }
                 _unitOfWork._JobRepository.InsertAsync(JOB);
-                await _unitOfWork.SaveChangesAsync();
+              /*  eventBus.PublishAsync(new GeneralBusMessages.Message.Job()
+                {
+                    ClientId = JOB.ClientId,
+                    Description = JOB.Description,
+                    FinishDate = JOB.FinishDate,
+                    IssueDate = JOB.IssueDate,
+                    ManagerId = JOB.ManagerId,
+                    MechanicId = JOB.MechanicId,
+                    ModelId = JOB.ModelId,
+                    Price = JOB.Price,
+                    Status = JOB.Status}
+                );*/
 
+                await _unitOfWork.SaveChangesAsync() ;
 
+               
 
             }
             catch (Exception ex)

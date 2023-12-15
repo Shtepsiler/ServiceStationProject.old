@@ -32,6 +32,8 @@ C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\Adm
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\bin\Debug\net7.0\Application.dll
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\bin\Debug\net7.0\Application.pdb
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\bin\Debug\net7.0\Domain.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\bin\Debug\net7.0\GeneralBusMessages.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\bin\Debug\net7.0\GeneralBusMessages.pdb
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\bin\Debug\net7.0\Domain.pdb
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\obj\Debug\net7.0\Application.csproj.AssemblyReference.cache
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Application\obj\Debug\net7.0\Application.GeneratedMSBuildEditorConfig.editorconfig

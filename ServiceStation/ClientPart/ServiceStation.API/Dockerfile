@@ -7,12 +7,12 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["ServiceStation.API/ServiceStation.API.csproj", "ServiceStation.API/"]
-COPY ["ServiceStation.BLL/ServiceStation.BLL.csproj", "ServiceStation.BLL/"]
-COPY ["ServiceStation.DAL/ServiceStation.DAL.csproj", "ServiceStation.DAL/"]
-RUN dotnet restore "ServiceStation.API/ServiceStation.API.csproj"
+COPY ["ClientPart/ServiceStation.API/ServiceStation.API.csproj", "ClientPart/ServiceStation.API/"]
+COPY ["ClientPart/ServiceStation.BLL/ServiceStation.BLL.csproj", "ClientPart/ServiceStation.BLL/"]
+COPY ["ClientPart/ServiceStation.DAL/ServiceStation.DAL.csproj", "ClientPart/ServiceStation.DAL/"]
+RUN dotnet restore "ClientPart/ServiceStation.API/ServiceStation.API.csproj"
 COPY . .
-WORKDIR "/src/ServiceStation.API"
+WORKDIR "/src/ClientPart/ServiceStation.API"
 RUN dotnet build "ServiceStation.API.csproj" -c Release -o /app/build
 
 FROM build AS publish

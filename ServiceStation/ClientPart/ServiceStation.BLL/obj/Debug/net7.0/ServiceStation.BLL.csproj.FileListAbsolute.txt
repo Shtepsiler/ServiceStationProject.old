@@ -46,7 +46,9 @@ C:\Навчання\OOP\project\project\Service station EntityFramework\ServiceS
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\bin\Debug\net7.0\ServiceStation.BLL.deps.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\bin\Debug\net7.0\ServiceStation.BLL.dll
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\bin\Debug\net7.0\ServiceStation.BLL.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\bin\Debug\net7.0\GeneralBusMessages.dll
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\bin\Debug\net7.0\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\bin\Debug\net7.0\GeneralBusMessages.pdb
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\bin\Debug\net7.0\ServiceStation.DAL.pdb
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\obj\Debug\net7.0\ServiceStation.BLL.csproj.AssemblyReference.cache
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\obj\Debug\net7.0\ServiceStation.BLL.GeneratedMSBuildEditorConfig.editorconfig

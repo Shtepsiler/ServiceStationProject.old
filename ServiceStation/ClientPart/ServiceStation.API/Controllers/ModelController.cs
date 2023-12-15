@@ -11,7 +11,8 @@ using Microsoft.Extensions.Caching.Distributed;
 using DocumentFormat.OpenXml.InkML;
 using System.Text;
 using Newtonsoft.Json;
-
+using ServiceStation.API.MessageBroker.EventBus;
+using GeneralBusMessages.Message;
 namespace ServiceStation.API.Controllers
 {
     [Route("api/[controller]")]
@@ -19,7 +20,7 @@ namespace ServiceStation.API.Controllers
     public class ModelController : ControllerBase
     {
         //видалити
-
+        private IEventBus eventBus;
         private IUnitOfBisnes _UnitOfBisnes;
         private readonly IDistributedCache distributedCache;
 
@@ -28,14 +29,16 @@ namespace ServiceStation.API.Controllers
             ILogger<ModelController> logger,
              IUnitOfBisnes UnitOfBisnes
 ,
-             IDistributedCache redis)
+             IDistributedCache redis,
+             IEventBus eventBus)
         {
             _logger = logger;
             _UnitOfBisnes = UnitOfBisnes;
             distributedCache = redis;
+            this.eventBus = eventBus;
         }
 
-        //GET: api/jobs
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ModelResponse>>> GetAllAsync()
         {
@@ -60,7 +63,7 @@ namespace ServiceStation.API.Controllers
                         .SetSlidingExpiration(TimeSpan.FromMinutes(2));
                     await distributedCache.SetAsync(cacheKey, redisModelList, options);
                 }
-                _logger.LogInformation($"Отримали всі івенти з бази даних!");
+                _logger.LogInformation($"ModelController            GetAllAsync");
                 return Ok(modelList);
 
 
@@ -68,12 +71,12 @@ namespace ServiceStation.API.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Транзакція сфейлилась! Щось пішло не так у методі GetAllEventsAsync() - {ex.Message}");
+                _logger.LogError($"{ex.Message}");
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
 
-        //GET: api/jobs/Id
+      
         [HttpGet("{id}")]
         [Authorize]
 
@@ -84,53 +87,56 @@ namespace ServiceStation.API.Controllers
                 var result = await _UnitOfBisnes._ModelService.GetByIdAsync(id);
                 if (result == null)
                 {
-                    _logger.LogInformation($"Івент із Id: {id}, не був знайдейний у базі даних");
+                    _logger.LogInformation($"Модель із Id: {id}, не був знайдейний у базі даних");
                     return NotFound();
                 }
                 else
                 {
-                    _logger.LogInformation($"Отримали івент з бази даних!");
+                    _logger.LogInformation($"ModelController            GetByIdAsync");
                     return Ok(result);
                 }
 
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Транзакція сфейлилась! Щось пішло не так у методі GetAllEventsAsync() - {ex.Message}");
+                _logger.LogError($"{ex.Message}");
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
 
-        //POST: api/jobs
+      
         [HttpPost]
         [Authorize]
 
-        public async Task<ActionResult> PostAsync([FromBody] ModelRequest manager)
+        public async Task<ActionResult> PostAsync([FromBody] ModelRequest model)
         {
             try
             {
-                if (manager == null)
+                if (model == null)
                 {
                     _logger.LogInformation($"Ми отримали пустий json зі сторони клієнта");
-                    return BadRequest("Обєкт івенту є null");
+                    return BadRequest("Обєкт моделі є null");
                 }
                 if (!ModelState.IsValid)
                 {
                     _logger.LogInformation($"Ми отримали некоректний json зі сторони клієнта");
-                    return BadRequest("Обєкт івенту є некоректним");
+                    return BadRequest("Обєкт моделі є некоректним");
                 }
-                await _UnitOfBisnes._ModelService.PostAsync(manager);
-  
+
+                await _UnitOfBisnes._ModelService.PostAsync(model);
+                await eventBus.PublishAsync(new GeneralBusMessages.Message.Model() {Id = model.Id, Name = model.Name });
+                _logger.LogInformation($"ModelController            PostAsync");
+
                 return StatusCode(StatusCodes.Status201Created);
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Транзакція сфейлилась! Щось пішло не так у методі PostAsync - {ex.Message}");
+                _logger.LogError($"{ex.Message}");
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
 
-        //POST: api/jobs/id
+      
         [HttpPut("{id}")]
         [Authorize]
 
@@ -141,7 +147,7 @@ namespace ServiceStation.API.Controllers
                 if (manager == null)
                 {
                     _logger.LogInformation($"Ми отримали пустий json зі сторони клієнта");
-                    return BadRequest("Обєкт івенту є null");
+                    return BadRequest("Обєкт моделі є null");
                 }
                 if (!ModelState.IsValid)
                 {
@@ -151,16 +157,18 @@ namespace ServiceStation.API.Controllers
                 manager.Id = id;
 
                 await _UnitOfBisnes._ModelService.UpdateAsync(id, manager);
+                _logger.LogInformation($"ModelController            UpdateAsync");
+
                 return StatusCode(StatusCodes.Status204NoContent);
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Транзакція сфейлилась! Щось пішло не так у методі PostAsync - {ex.Message}");
+                _logger.LogError($"{ex.Message}");
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
 
-        //GET: api/jobs/Id
+        
         [HttpDelete("{id}")]
         [Authorize]
 
@@ -171,16 +179,18 @@ namespace ServiceStation.API.Controllers
                 var event_entity = await _UnitOfBisnes._ModelService.GetByIdAsync(id);
                 if (event_entity == null)
                 {
-                    _logger.LogInformation($"Запис із Id: {id}, не був знайдейний у базі даних");
+                    _logger.LogInformation($"Модель із Id: {id}, не був знайдейний у базі даних");
                     return NotFound();
                 }
 
                 await _UnitOfBisnes._ModelService.DeleteByIdAsync(id);
-                return NoContent();
+                _logger.LogInformation($"ModelController            DeleteByIdAsync");
+
+                return Ok();
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Транзакція сфейлилась! Щось пішло не так у методі GetAllAsync() - {ex.Message}");
+                _logger.LogError($"{ex.Message}");
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }

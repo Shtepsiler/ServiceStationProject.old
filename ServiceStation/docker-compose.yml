@@ -4,8 +4,23 @@ networks:
 
 services:
 
+  rabbitmq:
+    image: rabbitmq:3.11.7-management
+    container_name: Rabbitmq
+    networks:
+      - ServiceStationNetwork
+    volumes:
+     - ./.containers/queue/data/:/var/lib/rabbitmq
+     - ./.containers/queue/log/:/var/lib/rabbitmq
+    environment:
+       RBBITMQ_DEFAULT_USER: guest
+       RBBITMQ_DEFAULT_PASS: guest
+    ports:
+      - 5672:5672
+      - 15672:15672
+
   webapplicationdatabase:
-    container_name: webapplicationdatabase
+    container_name: ManagerAPIDatabase
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
       - ACCEPT_EULA=Y
@@ -16,7 +31,7 @@ services:
       - 1443:1433  
       
   taskmanagerformechanicdatabase:
-    container_name: taskmanagerformechanicdatabase
+    container_name: MechanicAPIDatabase
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
       - ACCEPT_EULA=Y
@@ -27,7 +42,7 @@ services:
       - 1423:1433
 
   servicestationapirediscash:
-    container_name: servicestationapirediscash
+    container_name: ClientAPIRedisCash
     image: redis:7
     networks:
       - ServiceStationNetwork
@@ -35,7 +50,7 @@ services:
       - 6379:6379
   
   servicestationapidatabase:
-    container_name: servicestationapidatabase
+    container_name: ClientAPIDatabase
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
       - ACCEPT_EULA=Y
@@ -47,38 +62,12 @@ services:
 
 
 
-  servicestation.api:
-    image: ${DOCKER_REGISTRY-}servicestationapi
-    build:
-      context: .
-      dockerfile: ClientPart/ServiceStation.API/Dockerfile
-    networks:
-      - ServiceStationNetwork
-    ports:
-      - 2030:80
-    environment:
-      - REDIS=servicestationapirediscash
-      - DB_HOST=servicestationapidatabase
-      - DB_NAME=ServiceStation
-      - DB_SA_PASSWORD=Qwerty123
-  
-      
-  taskmanagerformechanic.web:
-    image: ${DOCKER_REGISTRY-}taskmanagerformechanicweb
-    build:
-      context: .
-      dockerfile: MechanicPart/TaskManagerForMechanic.WEB/Dockerfile
-    networks:
-         - ServiceStationNetwork
-    ports:
-      - 2020:80
-    environment:
-      - DB_HOST=taskmanagerformechanicdatabase
-      - DB_NAME=ServiceStation
-      - DB_SA_PASSWORD=Qwerty123
 
   webapplication:
     image: ${DOCKER_REGISTRY-}webapplication
+    container_name: ManagerAPI
+    depends_on:
+      - webapplicationdatabase
     build:
       context: .
       dockerfile: AdminPart/WebApplication/Dockerfile
@@ -87,6 +76,67 @@ services:
     ports:
       - 2040:80
     environment:
-      - DB_HOST=webapplicationdatabase
+      - DB_HOST=ManagerAPIDatabase
       - DB_NAME=ServiceStation
       - DB_SA_PASSWORD=Qwerty123
+      - RBBITMQ_USER= guest
+      - RBBITMQ_PASS= guest
+
+
+  servicestation.api:
+    image: ${DOCKER_REGISTRY-}servicestationapi
+    container_name: ClientAPI
+    depends_on:
+      - servicestationapidatabase
+      - servicestationapirediscash
+    build:
+      context: .
+      dockerfile: ClientPart/ServiceStation.API/Dockerfile
+    networks:
+      - ServiceStationNetwork
+    ports:
+      - 2030:80
+    environment:
+      - REDIS=ClientAPIRedisCash
+      - DB_HOST=ClientAPIDatabase
+      - DB_NAME=ServiceStation
+      - DB_SA_PASSWORD=Qwerty123
+      - RBBITMQ_USER= guest
+      - RBBITMQ_PASS= guest
+
+
+  taskmanagerformechanic.web:
+    image: ${DOCKER_REGISTRY-}taskmanagerformechanicweb
+    container_name: MechanicAPI
+    depends_on:
+      - taskmanagerformechanicdatabase
+    build:
+      context: .
+      dockerfile: MechanicPart/TaskManagerForMechanic.WEB/Dockerfile
+    networks:
+         - ServiceStationNetwork
+    ports:
+      - 2020:80
+    environment:
+      - DB_HOST=MechanicAPIDatabase
+      - DB_NAME=ServiceStation
+      - DB_SA_PASSWORD=Qwerty123
+      - RBBITMQ_USER= guest
+      - RBBITMQ_PASS= guest
+
+
+  api.gateway:
+    image: ${DOCKER_REGISTRY-}apigateway
+    depends_on:
+      - taskmanagerformechanic.web
+      - servicestation.api
+      - webapplication
+    build:
+      context: .
+      dockerfile: API.GATEWAY/Dockerfile
+    networks:
+         - ServiceStationNetwork
+    ports:
+      - 2000:80
+    
+

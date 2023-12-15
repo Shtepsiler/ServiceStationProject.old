@@ -6,6 +6,10 @@ using ServiceStation.BLL.DTO.Responses;
 using ServiceStation.BLL.DTO.Requests;
 using Microsoft.AspNetCore.Authorization;
 using System.Data;
+using Microsoft.Extensions.Caching.Distributed;
+using Newtonsoft.Json;
+using System.Text;
+using ServiceStation.API.MessageBroker.EventBus;
 
 namespace ServiceStation.API.Controllers
 {
@@ -13,35 +17,57 @@ namespace ServiceStation.API.Controllers
     [ApiController]
     public class JobController : ControllerBase
     {
+        private IEventBus eventBus;
 
         private IUnitOfBisnes _UnitOfBisnes;
+        private readonly IDistributedCache distributedCache;
 
         private readonly ILogger<JobController> _logger;
         public JobController(
             ILogger<JobController> logger,
-             IUnitOfBisnes UnitOfBisnes
-            )
+             IUnitOfBisnes UnitOfBisnes,
+             IDistributedCache distributedCache,
+             IEventBus eventBus)
         {
             _logger = logger;
             _UnitOfBisnes = UnitOfBisnes;
+            this.distributedCache = distributedCache;
+            this.eventBus = eventBus;
         }
 
-        //GET: api/jobs
         [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<JobResponse>>> GetAllAsync()
         {
             try
             {
-                var results = await _UnitOfBisnes._JobService.GetAllAsync();
 
+                var cacheKey = "jobList";
+                string serializedJobList;
+                var jobList = new List<JobResponse>();
+                var redisJobList = await distributedCache.GetAsync(cacheKey);
+                if (redisJobList != null)
+                {
+                    serializedJobList = Encoding.UTF8.GetString(redisJobList);
+                    jobList = JsonConvert.DeserializeObject<List<JobResponse>>(serializedJobList);
+                }
+                else
+                {
+                    jobList = (List<JobResponse>)await _UnitOfBisnes._MechanicService.GetAllAsync();
+                    serializedJobList = JsonConvert.SerializeObject(jobList);
+                    redisJobList = Encoding.UTF8.GetBytes(serializedJobList);
+                    var options = new DistributedCacheEntryOptions()
+                        .SetAbsoluteExpiration(DateTime.Now.AddMinutes(5))
+                        .SetSlidingExpiration(TimeSpan.FromMinutes(1));
+                    await distributedCache.SetAsync(cacheKey, redisJobList, options);
+                }
+                _logger.LogInformation($"JobController            GetAllAsync");
+                return Ok(jobList);
 
-                _logger.LogInformation($"Отримали всі івенти з бази даних!");
-                return Ok(results);
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Транзакція сфейлилась! Щось пішло не так у методі GetAllEventsAsync() - {ex.Message}");
+                _logger.LogError($"{ex.Message}");
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
@@ -142,6 +168,8 @@ namespace ServiceStation.API.Controllers
                     return BadRequest("Обєкт івенту є некоректним");
                 }
                 await _UnitOfBisnes._JobService.PostNewJobAsync(job);
+                await eventBus.PublishAsync(job);
+
                 return StatusCode(StatusCodes.Status201Created);
             }
             catch (Exception ex)

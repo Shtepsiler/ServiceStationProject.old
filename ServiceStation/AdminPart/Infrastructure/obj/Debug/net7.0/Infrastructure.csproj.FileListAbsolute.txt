@@ -42,8 +42,10 @@ C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\Adm
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Infrastructure\bin\Debug\net7.0\Infrastructure.pdb
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Infrastructure\bin\Debug\net7.0\Application.dll
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Infrastructure\bin\Debug\net7.0\Domain.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Infrastructure\bin\Debug\net7.0\GeneralBusMessages.dll
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Infrastructure\bin\Debug\net7.0\Application.pdb
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Infrastructure\bin\Debug\net7.0\Domain.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Infrastructure\bin\Debug\net7.0\GeneralBusMessages.pdb
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.AssemblyReference.cache
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Infrastructure\obj\Debug\net7.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfoInputs.cache
