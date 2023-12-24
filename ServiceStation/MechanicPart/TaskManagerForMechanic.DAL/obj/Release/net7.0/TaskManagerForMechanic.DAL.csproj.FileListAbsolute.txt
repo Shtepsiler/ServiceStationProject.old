@@ -1,0 +1,14 @@
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\bin\Release\net7.0\TaskManagerForMechanic.DAL.deps.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\bin\Release\net7.0\TaskManagerForMechanic.DAL.runtimeconfig.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\bin\Release\net7.0\TaskManagerForMechanic.DAL.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\bin\Release\net7.0\TaskManagerForMechanic.DAL.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\obj\Release\net7.0\TaskManagerForMechanic.DAL.csproj.AssemblyReference.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\obj\Release\net7.0\TaskManagerForMechanic.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\obj\Release\net7.0\TaskManagerForMechanic.DAL.AssemblyInfoInputs.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\obj\Release\net7.0\TaskManagerForMechanic.DAL.AssemblyInfo.cs
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\obj\Release\net7.0\TaskManagerForMechanic.DAL.csproj.CoreCompileInputs.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\obj\Release\net7.0\TaskManagerForMechanic.DAL.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\obj\Release\net7.0\refint\TaskManagerForMechanic.DAL.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\obj\Release\net7.0\TaskManagerForMechanic.DAL.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\obj\Release\net7.0\TaskManagerForMechanic.DAL.genruntimeconfig.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\obj\Release\net7.0\ref\TaskManagerForMechanic.DAL.dll

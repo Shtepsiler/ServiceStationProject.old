@@ -1,9 +1,8 @@
 version: '3.4'
 
 services:
-  api.gateway:
+  apigateway:
     image: apigateway:dev
-    container_name: "API.GATEWAY"
     build:
       target: base
       labels:
@@ -34,7 +33,7 @@ services:
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
-  servicestation.api:
+  servicestationapi:
     image: servicestationapi:dev
     build:
       target: base
@@ -67,7 +66,7 @@ services:
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
 
-  taskmanagerformechanic.web:
+  taskmanagerformechanicweb:
     image: taskmanagerformechanicweb:dev
     build:
       target: base

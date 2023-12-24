@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cdfb1m08QUrtqyaDVzl8waSdginToeDsOpQQ2vdALROGCH8Z3tZsov3bVxGjJuJPqkmW2xgGsu5tshO8/FmJbQ==",
+  "success": true,
+  "projectFilePath": "C:\\Навчання\\OOP\\project\\ServiceStation\\ServiceStation\\ServiceStation\\MechanicPart\\MechanicIdentiyServer\\MechanicIdentiyServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mosso\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512"
+  ],
+  "logs": []
+}

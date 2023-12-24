@@ -1,7 +1,6 @@
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\GeneralBusMessages\bin\Debug\net7.0\GeneralBusMessages.deps.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\GeneralBusMessages\bin\Debug\net7.0\GeneralBusMessages.dll
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\GeneralBusMessages\bin\Debug\net7.0\GeneralBusMessages.pdb
-C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\GeneralBusMessages\obj\Debug\net7.0\GeneralBusMessages.csproj.AssemblyReference.cache
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\GeneralBusMessages\obj\Debug\net7.0\GeneralBusMessages.GeneratedMSBuildEditorConfig.editorconfig
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\GeneralBusMessages\obj\Debug\net7.0\GeneralBusMessages.AssemblyInfoInputs.cache
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\GeneralBusMessages\obj\Debug\net7.0\GeneralBusMessages.AssemblyInfo.cs

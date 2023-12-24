@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Kaybig+yWFe2hbEJrbtOUrLWC/7KkqjGjTScz/c9BPo=",
+  "Source": "API.GATEWAY",
+  "BasePath": "_content/API.GATEWAY",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

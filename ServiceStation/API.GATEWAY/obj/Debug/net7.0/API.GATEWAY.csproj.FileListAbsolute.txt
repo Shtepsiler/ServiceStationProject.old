@@ -1,10 +1,7 @@
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\appsettings.Development.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\appsettings.json
-C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\ocelot.json
-C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\Routes\ocelot.client.api.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\Routes\ocelot.global.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\Routes\ocelot.manager.json
-C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\Routes\ocelot.mechanic.api.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\Routes\ocelot.SwaggerEndPoints.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\API.GATEWAY.exe
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\API.GATEWAY.deps.json
@@ -92,3 +89,7 @@ C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\obj\Debug\net7.0\API.GATEWAY.pdb
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\obj\Debug\net7.0\API.GATEWAY.genruntimeconfig.cache
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\obj\Debug\net7.0\ref\API.GATEWAY.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\Routes\ocelot.clientapi.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\Routes\ocelot.mechanicapi.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\configuration.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\ocelot.json

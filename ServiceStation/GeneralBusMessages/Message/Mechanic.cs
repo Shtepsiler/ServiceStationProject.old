@@ -9,5 +9,7 @@
         public string Phone { get; set; }
         public string Password { get; set; }
         public string Specialization { get; set; }
+        public string? PhotoURL { get; set; }
+
     }
 }

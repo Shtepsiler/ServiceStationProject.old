@@ -9,37 +9,37 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TaskManagerForMechanic.WEB
 build_property.RootNamespace = TaskManagerForMechanic.WEB
-build_property.ProjectDir = C:\Навчання\OOP\project\project\TaskManagerForMechanic\TaskManagerForMechanic\TaskManagerForMechanic.WEB\
+build_property.ProjectDir = C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.WEB\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Навчання\OOP\project\project\TaskManagerForMechanic\TaskManagerForMechanic\TaskManagerForMechanic.WEB
+build_property.MSBuildProjectDirectory = C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.WEB
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Навчання/OOP/project/project/TaskManagerForMechanic/TaskManagerForMechanic/TaskManagerForMechanic.WEB/Pages/Error.cshtml]
+[C:/Навчання/OOP/project/ServiceStation/ServiceStation/ServiceStation/MechanicPart/TaskManagerForMechanic.WEB/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Навчання/OOP/project/project/TaskManagerForMechanic/TaskManagerForMechanic/TaskManagerForMechanic.WEB/Pages/Index.cshtml]
+[C:/Навчання/OOP/project/ServiceStation/ServiceStation/ServiceStation/MechanicPart/TaskManagerForMechanic.WEB/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Навчання/OOP/project/project/TaskManagerForMechanic/TaskManagerForMechanic/TaskManagerForMechanic.WEB/Pages/Privacy.cshtml]
+[C:/Навчання/OOP/project/ServiceStation/ServiceStation/ServiceStation/MechanicPart/TaskManagerForMechanic.WEB/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Навчання/OOP/project/project/TaskManagerForMechanic/TaskManagerForMechanic/TaskManagerForMechanic.WEB/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Навчання/OOP/project/ServiceStation/ServiceStation/ServiceStation/MechanicPart/TaskManagerForMechanic.WEB/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Навчання/OOP/project/project/TaskManagerForMechanic/TaskManagerForMechanic/TaskManagerForMechanic.WEB/Pages/_ViewImports.cshtml]
+[C:/Навчання/OOP/project/ServiceStation/ServiceStation/ServiceStation/MechanicPart/TaskManagerForMechanic.WEB/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Навчання/OOP/project/project/TaskManagerForMechanic/TaskManagerForMechanic/TaskManagerForMechanic.WEB/Pages/_ViewStart.cshtml]
+[C:/Навчання/OOP/project/ServiceStation/ServiceStation/ServiceStation/MechanicPart/TaskManagerForMechanic.WEB/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Навчання/OOP/project/project/TaskManagerForMechanic/TaskManagerForMechanic/TaskManagerForMechanic.WEB/Pages/Shared/_Layout.cshtml]
+[C:/Навчання/OOP/project/ServiceStation/ServiceStation/ServiceStation/MechanicPart/TaskManagerForMechanic.WEB/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-h3dwaed3v5

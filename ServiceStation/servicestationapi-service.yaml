@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.30.0 (9d8dcb518)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: servicestationapi
+  name: servicestationapi
+  namespace: default
+spec:
+  ports:
+    - name: "2030"
+      port: 2030
+      targetPort: 80
+    - name: "2031"
+      port: 2031
+      targetPort: 443
+  selector:
+    io.kompose.service: servicestationapi
+status:
+  loadBalancer: {}
