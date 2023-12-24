@@ -18,7 +18,11 @@
         {
           "Name": "ClientAPI",
           "Version": "1.0",
+<<<<<<< HEAD
           "Url": "http://localhost:2000/client/swagger/v1/swagger.json"
+=======
+          "Url": "http://ClientAPI:80/swagger/v1/swagger.json"
+>>>>>>> 9962e94071c44cc0896355cfdc8e0ef2d4175fd9
         }
       ]
     },
@@ -29,7 +33,11 @@
         {
           "Name": "ManagerAPI",
           "Version": "1.0",
+<<<<<<< HEAD
           "Url": "http://localhost:2000/manager/swagger/v1/swagger.json"
+=======
+          "Url": "http://ManagerAPI:80/swagger/v1/swagger.json"
+>>>>>>> 9962e94071c44cc0896355cfdc8e0ef2d4175fd9
         }
       ]
     }

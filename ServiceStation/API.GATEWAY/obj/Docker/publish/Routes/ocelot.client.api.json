@@ -10,11 +10,19 @@
         "DELETE"
       ],
       "DownstreamPathTemplate": "/api/{everything}",
+<<<<<<<< HEAD:ServiceStation/API.GATEWAY/obj/Docker/publish/Routes/ocelot.client.api.json
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "ClientAPI",
           "Port": "433"
+========
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ClientAPI",
+          "Port": "80"
+>>>>>>>> 9962e94071c44cc0896355cfdc8e0ef2d4175fd9:ServiceStation/API.GATEWAY/bin/Debug/net7.0/Routes/ocelot.clientapi.json
         }
       ]
 
