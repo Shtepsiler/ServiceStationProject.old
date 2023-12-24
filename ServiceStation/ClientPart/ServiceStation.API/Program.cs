@@ -60,6 +60,8 @@ internal class Program
             });
         });
 
+        builder.Services.AddScoped<ServiceStation.BLL.EventBus.IEventBus, ServiceStation.BLL.EventBus.EventBus>();
+        builder.Services.AddScoped<IEventBus,EventBus>();
 
 
 
@@ -98,7 +100,8 @@ internal class Program
         });
         builder.Services.AddSwaggerGen(o =>
         {
-            o.SwaggerDoc("v1", new OpenApiInfo());
+            
+            o.SwaggerDoc("v1", new OpenApiInfo() { Title = "Client Api" });
             o.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
             {
                 Type = SecuritySchemeType.Http,
@@ -132,16 +135,18 @@ internal class Program
 
         builder.Services.AddDbContext<ServiceStationDContext>(options =>
         {
+         string connectionString;
             var dbhost = Environment.GetEnvironmentVariable("DB_HOST");
             var dbname = Environment.GetEnvironmentVariable("DB_NAME");
             var dbpass = Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
 
 
-            string connectionString = $"Data Source={dbhost};User ID=sa;Password={dbpass};Initial Catalog={dbname};Encrypt=True;Trust Server Certificate=True;";
-            /*    if (builder.Environment.IsDevelopment())
-                {
-                    connectionString = builder.Configuration.GetConnectionString("MSSQLConnection");
-                } */
+            connectionString = $"Data Source={dbhost};User ID=sa;Password={dbpass};Initial Catalog={dbname};Encrypt=True;Trust Server Certificate=True;";
+
+
+
+            // connectionString = builder.Configuration.GetConnectionString("MSSQLConnection");
+
             options.UseSqlServer(connectionString);
 
         });
@@ -175,7 +180,6 @@ internal class Program
         builder.Services.AddScoped<IUnitOfBisnes, UnitOfBisnes>();
 
         builder.Services.AddTransient<EmailSender>();
-        builder.Services.AddScoped<IEventBus, EventBus>();
 
         builder.Services.AddScoped<IValidator<ClientSignInRequest>, ClientSignInRequestValidator>();
         builder.Services.AddScoped<IValidator<ClientSignUpRequest>, ClientSingUpRequestValidator>();

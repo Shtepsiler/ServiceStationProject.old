@@ -1,0 +1,12 @@
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Domain\bin\Release\net7.0\Domain.deps.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Domain\bin\Release\net7.0\Domain.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Domain\bin\Release\net7.0\Domain.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Domain\obj\Release\net7.0\Domain.csproj.AssemblyReference.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Domain\obj\Release\net7.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Domain\obj\Release\net7.0\Domain.AssemblyInfoInputs.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Domain\obj\Release\net7.0\Domain.AssemblyInfo.cs
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Domain\obj\Release\net7.0\Domain.csproj.CoreCompileInputs.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Domain\obj\Release\net7.0\Domain.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Domain\obj\Release\net7.0\refint\Domain.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Domain\obj\Release\net7.0\Domain.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\Domain\obj\Release\net7.0\ref\Domain.dll

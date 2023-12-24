@@ -1,0 +1,17 @@
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\bin\Release\net7.0\ServiceStation.BLL.deps.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\bin\Release\net7.0\ServiceStation.BLL.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\bin\Release\net7.0\ServiceStation.BLL.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\bin\Release\net7.0\GeneralBusMessages.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\bin\Release\net7.0\ServiceStation.DAL.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\bin\Release\net7.0\GeneralBusMessages.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\bin\Release\net7.0\ServiceStation.DAL.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\obj\Release\net7.0\ServiceStation.BLL.csproj.AssemblyReference.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\obj\Release\net7.0\ServiceStation.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\obj\Release\net7.0\ServiceStation.BLL.AssemblyInfoInputs.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\obj\Release\net7.0\ServiceStation.BLL.AssemblyInfo.cs
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\obj\Release\net7.0\ServiceStation.BLL.csproj.CoreCompileInputs.cache
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\obj\Release\net7.0\ServiceStation.BLL.csproj.CopyComplete
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\obj\Release\net7.0\ServiceStation.BLL.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\obj\Release\net7.0\refint\ServiceStation.BLL.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\obj\Release\net7.0\ServiceStation.BLL.pdb
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.BLL\obj\Release\net7.0\ref\ServiceStation.BLL.dll

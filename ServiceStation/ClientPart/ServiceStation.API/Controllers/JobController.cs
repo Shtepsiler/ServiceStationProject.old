@@ -168,7 +168,7 @@ namespace ServiceStation.API.Controllers
                     return BadRequest("Обєкт івенту є некоректним");
                 }
                 await _UnitOfBisnes._JobService.PostNewJobAsync(job);
-                await eventBus.PublishAsync(job);
+                
 
                 return StatusCode(StatusCodes.Status201Created);
             }

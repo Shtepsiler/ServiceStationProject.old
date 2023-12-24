@@ -1,10 +1,10 @@
-﻿using MassTransit;
-
-namespace GeneralBusMessages.Message
+﻿namespace GeneralBusMessages.Message
 {
-    public class Model: IConsumer
+    public class Model
     {
+
         public int Id { get; set; }
         public string Name { get; set; }
+
     }
 }

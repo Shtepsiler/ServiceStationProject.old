@@ -75,6 +75,8 @@ services:
          - ServiceStationNetwork
     ports:
       - 2040:80
+      - 2041:443
+        
     environment:
       - DB_HOST=ManagerAPIDatabase
       - DB_NAME=ServiceStation
@@ -83,7 +85,7 @@ services:
       - RBBITMQ_PASS= guest
 
 
-  servicestation.api:
+  servicestationapi:
     image: ${DOCKER_REGISTRY-}servicestationapi
     container_name: ClientAPI
     depends_on:
@@ -96,6 +98,7 @@ services:
       - ServiceStationNetwork
     ports:
       - 2030:80
+      - 2031:443
     environment:
       - REDIS=ClientAPIRedisCash
       - DB_HOST=ClientAPIDatabase
@@ -105,7 +108,7 @@ services:
       - RBBITMQ_PASS= guest
 
 
-  taskmanagerformechanic.web:
+  taskmanagerformechanicweb:
     image: ${DOCKER_REGISTRY-}taskmanagerformechanicweb
     container_name: MechanicAPI
     depends_on:
@@ -117,6 +120,7 @@ services:
          - ServiceStationNetwork
     ports:
       - 2020:80
+      - 2021:443
     environment:
       - DB_HOST=MechanicAPIDatabase
       - DB_NAME=ServiceStation
@@ -125,11 +129,12 @@ services:
       - RBBITMQ_PASS= guest
 
 
-  api.gateway:
+  apigateway:
     image: ${DOCKER_REGISTRY-}apigateway
+    container_name: API_GATEWAY
     depends_on:
-      - taskmanagerformechanic.web
-      - servicestation.api
+      - taskmanagerformechanicweb
+      - servicestationapi
       - webapplication
     build:
       context: .
@@ -138,5 +143,6 @@ services:
          - ServiceStationNetwork
     ports:
       - 2000:80
+      - 2001:443
     
 

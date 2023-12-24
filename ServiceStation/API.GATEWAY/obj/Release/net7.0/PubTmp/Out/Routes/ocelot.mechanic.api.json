@@ -1,0 +1,17 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/graphql",
+      "DownstreamScheme": "https",
+      "SwaggerKey": "mechanic",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "MechanicAPI",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/mechanic",
+      "UpstreamHttpMethod": [ "POST" ]
+    }
+  ]
+}

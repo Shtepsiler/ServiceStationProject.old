@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TaskManagerForMechanic.DAL
-build_property.ProjectDir = C:\Навчання\OOP\project\project\TaskManagerForMechanic\TaskManagerForMechanic\TaskManagerForMechanic.DAL\
+build_property.ProjectDir = C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.DAL\

@@ -88,7 +88,7 @@ var securityReq = new OpenApiSecurityRequirement()
 };
 builder.Services.AddSwaggerGen(o =>
 {
-    o.SwaggerDoc("v1", new OpenApiInfo());
+    o.SwaggerDoc("v1", new OpenApiInfo() { Title = "Manager API"});
     o.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Type = SecuritySchemeType.Http,

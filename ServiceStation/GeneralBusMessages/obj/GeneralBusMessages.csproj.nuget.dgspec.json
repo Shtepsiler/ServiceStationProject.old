@@ -43,12 +43,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "MassTransit": {
-              "target": "Package",
-              "version": "[8.1.2, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

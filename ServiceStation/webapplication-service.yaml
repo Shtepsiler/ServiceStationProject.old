@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.30.0 (9d8dcb518)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: webapplication
+  name: webapplication
+  namespace: default
+spec:
+  ports:
+    - name: "2040"
+      port: 2040
+      targetPort: 80
+    - name: "2041"
+      port: 2041
+      targetPort: 443
+  selector:
+    io.kompose.service: webapplication
+status:
+  loadBalancer: {}

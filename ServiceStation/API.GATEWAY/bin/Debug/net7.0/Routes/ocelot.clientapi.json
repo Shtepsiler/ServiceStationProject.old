@@ -1,0 +1,42 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/client/swagger/{everything}",
+      "SwaggerKey": "manager",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "DownstreamPathTemplate": "/swagger/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ClientAPI",
+          "Port": "80"
+        }
+      ]
+
+    },
+    {
+      "SwaggerKey": "client",
+      "UpstreamPathTemplate": "/client/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ClientAPI",
+          "Port": "80"
+        }
+      ]
+
+    }
+  ]
+}

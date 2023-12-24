@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.30.0 (9d8dcb518)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: webapplicationdatabase
+  name: webapplicationdatabase
+  namespace: default
+spec:
+  ports:
+    - name: "1443"
+      port: 1443
+      targetPort: 1433
+  selector:
+    io.kompose.service: webapplicationdatabase
+status:
+  loadBalancer: {}

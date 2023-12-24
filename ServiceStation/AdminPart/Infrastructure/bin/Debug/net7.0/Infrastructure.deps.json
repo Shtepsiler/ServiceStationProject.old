@@ -1004,9 +1004,6 @@
         }
       },
       "GeneralBusMessages/1.0.0": {
-        "dependencies": {
-          "MassTransit": "8.1.2"
-        },
         "runtime": {
           "GeneralBusMessages.dll": {}
         }
