@@ -119,4 +119,8 @@ C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\obj
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\obj\Debug\docker-compose.dcproj.CopyComplete
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Routes\ocelot.clientapi.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Routes\ocelot.mechanicapi.json
+<<<<<<< HEAD
+=======
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\configuration.json
+>>>>>>> 9962e94071c44cc0896355cfdc8e0ef2d4175fd9
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\ocelot.json

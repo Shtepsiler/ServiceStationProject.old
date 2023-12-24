@@ -91,4 +91,8 @@ C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\obj\Debug\net7.0\ref\API.GATEWAY.dll
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\Routes\ocelot.clientapi.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\Routes\ocelot.mechanicapi.json
+<<<<<<< HEAD
+=======
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\configuration.json
+>>>>>>> 9962e94071c44cc0896355cfdc8e0ef2d4175fd9
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY\bin\Debug\net7.0\ocelot.json
