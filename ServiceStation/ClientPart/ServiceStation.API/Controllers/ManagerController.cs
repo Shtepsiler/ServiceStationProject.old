@@ -1,12 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using ServiceStation.DAL.Entities;
-
-using ServiceStation.BLL.Services.Interfaces;
-using ServiceStation.BLL.DTO.Responses;
-using ServiceStation.BLL.DTO.Requests;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
+using ServiceStation.BLL.DTO.Responses;
+using ServiceStation.BLL.Services.Interfaces;
 using System.Text;
 
 namespace ServiceStation.API.Controllers
@@ -98,7 +95,7 @@ namespace ServiceStation.API.Controllers
             }
         }
 
-     
+
 
     }
 }

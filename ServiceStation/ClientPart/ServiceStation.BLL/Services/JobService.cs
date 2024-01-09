@@ -1,12 +1,9 @@
 ﻿using AutoMapper;
-using MassTransit;
 using ServiceStation.BLL.DTO.Requests;
 using ServiceStation.BLL.DTO.Responses;
 using ServiceStation.BLL.EventBus;
-using ServiceStation.BLL.Mapping;
 using ServiceStation.BLL.Services.Interfaces;
 using ServiceStation.DAL.Entities;
-using ServiceStation.DAL.Repositories;
 using ServiceStation.DAL.Repositories.Contracts;
 
 namespace ServiceStation.BLL.Services
@@ -15,19 +12,19 @@ namespace ServiceStation.BLL.Services
     {
         public readonly IUnitOfWork _unitOfWork;
         public readonly IMapper _maper;
-       private readonly IEventBus eventBus;
+        private readonly IEventBus eventBus;
         public JobService(IUnitOfWork unitOfWork, IMapper maper, IEventBus eventBus)
         {
             _unitOfWork = unitOfWork;
             _maper = maper;
-           this.eventBus = eventBus;
+            this.eventBus = eventBus;
         }
 
         public async Task<IEnumerable<JobResponse>> GetAllAsync()
         {
             try
             {
-                var results =(List<Job>) await _unitOfWork._JobRepository.GetAsync();
+                var results = (List<Job>)await _unitOfWork._JobRepository.GetAsync();
                 return _maper.Map<List<Job>, List<JobResponse>>(results);
             }
             catch (Exception ex)
@@ -41,7 +38,7 @@ namespace ServiceStation.BLL.Services
             {
                 var results = (List<Job>)await _unitOfWork._JobRepository.GetByClientIdAsync(clientId);
 
-                return  _maper.Map<List<Job>,List<ClientsJobsResponse>>(results);
+                return _maper.Map<List<Job>, List<ClientsJobsResponse>>(results);
 
             }
             catch (Exception ex)
@@ -92,15 +89,16 @@ namespace ServiceStation.BLL.Services
             Model inmodel;
             try
             {
-                Job JOB = new Job { 
+                Job JOB = new Job
+                {
                     ClientId = job.ClientId,
-                IssueDate = job.IssueDate,
-                Description = job.Description  
+                    IssueDate = job.IssueDate,
+                    Description = job.Description
                 };
                 var model = _unitOfWork._ModelRepository.GetModelByName(job.ModelName);
-                if(model.Result == null)
+                if (model.Result == null)
                 {
-                    inmodel =  new Model(job.ModelName);
+                    inmodel = new Model(job.ModelName);
                     _unitOfWork._ModelRepository.InsertAsync(inmodel);
                     await _unitOfWork.SaveChangesAsync();
 
@@ -127,9 +125,9 @@ namespace ServiceStation.BLL.Services
                 }
                 );
 
-                await _unitOfWork.SaveChangesAsync() ;
+                await _unitOfWork.SaveChangesAsync();
 
-               
+
 
             }
             catch (Exception ex)
@@ -176,7 +174,7 @@ namespace ServiceStation.BLL.Services
 
                 await _unitOfWork._JobRepository.DeleteAsync(id);
                 await _unitOfWork.SaveChangesAsync();
-               
+
             }
             catch (Exception ex)
             {

@@ -1,18 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using ServiceStation.DAL.Entities;
-
-using ServiceStation.BLL.Services.Interfaces;
-using ServiceStation.BLL.DTO.Responses;
-using ServiceStation.BLL.DTO.Requests;
-using Microsoft.AspNetCore.Authorization;
-using StackExchange.Redis;
-using System.Text.Json;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
-using DocumentFormat.OpenXml.InkML;
-using System.Text;
 using Newtonsoft.Json;
 using ServiceStation.API.MessageBroker.EventBus;
-using GeneralBusMessages.Message;
+using ServiceStation.BLL.DTO.Requests;
+using ServiceStation.BLL.DTO.Responses;
+using ServiceStation.BLL.Services.Interfaces;
+using System.Text;
 namespace ServiceStation.API.Controllers
 {
     [Route("api/[controller]")]
@@ -55,7 +49,7 @@ namespace ServiceStation.API.Controllers
                 }
                 else
                 {
-                    modelList = (List<ModelResponse>) await _UnitOfBisnes._ModelService.GetAllAsync();
+                    modelList = (List<ModelResponse>)await _UnitOfBisnes._ModelService.GetAllAsync();
                     serializedModelList = JsonConvert.SerializeObject(modelList);
                     redisModelList = Encoding.UTF8.GetBytes(serializedModelList);
                     var options = new DistributedCacheEntryOptions()
@@ -76,7 +70,7 @@ namespace ServiceStation.API.Controllers
             }
         }
 
-      
+
         [HttpGet("{id}")]
         [Authorize]
 
@@ -104,7 +98,7 @@ namespace ServiceStation.API.Controllers
             }
         }
 
-      
+
         [HttpPost]
         [Authorize]
 
@@ -124,7 +118,7 @@ namespace ServiceStation.API.Controllers
                 }
 
                 await _UnitOfBisnes._ModelService.PostAsync(model);
-                await eventBus.PublishAsync(new GeneralBusMessages.Message.Model() {Id = model.Id, Name = model.Name });
+                await eventBus.PublishAsync(new GeneralBusMessages.Message.Model() { Id = model.Id, Name = model.Name });
                 _logger.LogInformation($"ModelController            PostAsync");
 
                 return StatusCode(StatusCodes.Status201Created);
@@ -136,7 +130,7 @@ namespace ServiceStation.API.Controllers
             }
         }
 
-      
+
         [HttpPut("{id}")]
         [Authorize]
 
@@ -168,7 +162,7 @@ namespace ServiceStation.API.Controllers
             }
         }
 
-        
+
         [HttpDelete("{id}")]
         [Authorize]
 

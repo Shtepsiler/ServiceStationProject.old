@@ -11,7 +11,7 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("de8a50c1-3186-40cf-8ee9-ef6f8e7eedef")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("7378d468-5649-4fd3-83e7-92d4b05771c6")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("API.GATEWAY")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

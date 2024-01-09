@@ -1,15 +1,10 @@
 ﻿using Application.DTOs.Respponces;
-using Application.Operations.Jobs.Queries;
-using Application.Operations.Models.Commands;
-using Application.Operations.Orders.Queries;
 using Application.Operations.Vendors.Commands;
 using Application.Operations.Vendors.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
-using System.Runtime.CompilerServices;
 
 namespace WebApplication.Controllers
 {
@@ -85,7 +80,7 @@ namespace WebApplication.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-        }   
+        }
 
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]

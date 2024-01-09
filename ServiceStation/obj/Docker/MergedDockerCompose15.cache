@@ -1,0 +1,520 @@
+name: dockercompose431493579175213511
+services:
+  apigateway:
+    build:
+      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
+      dockerfile: API.GATEWAY/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: API.GATEWAY
+    container_name: API_GATEWAY
+    depends_on:
+      servicestationapi:
+        condition: service_started
+        required: true
+      taskmanagerformechanicweb:
+        condition: service_started
+        required: true
+      webapplication:
+        condition: service_started
+        required: true
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    image: apigateway
+    labels:
+      com.microsoft.visual-studio.project-name: API.GATEWAY
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/API.GATEWAY.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "2000"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "2001"
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\mosso\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net7.0
+        target: /TokenService.Proxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net7.0
+        target: /HotReloadProxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  mechanicidentiyserver:
+    build:
+      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
+      dockerfile: MechanicPart/MechanicIdentiyServer/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: MechanicIdentiyServer
+    container_name: mechanicidentiyserver
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    image: mechanicidentiyserver
+    labels:
+      com.microsoft.visual-studio.project-name: MechanicIdentiyServer
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/MechanicIdentiyServer.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "2023"
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\mosso\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net7.0
+        target: /TokenService.Proxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net7.0
+        target: /HotReloadProxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  rabbitmq:
+    container_name: Rabbitmq
+    environment:
+      RBBITMQ_DEFAULT_PASS: guest
+      RBBITMQ_DEFAULT_USER: guest
+    image: rabbitmq:3.11.7-management
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 5672
+        published: "5672"
+        protocol: tcp
+      - mode: ingress
+        target: 15672
+        published: "15672"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\.containers\queue\data
+        target: /var/lib/rabbitmq
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\.containers\queue\log
+        target: /var/lib/rabbitmq
+        bind:
+          create_host_path: true
+  servicestationapi:
+    build:
+      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
+      dockerfile: ClientPart/ServiceStation.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ServiceStation.API
+    container_name: ClientAPI
+    depends_on:
+      servicestationapidatabase:
+        condition: service_started
+        required: true
+      servicestationapirediscash:
+        condition: service_started
+        required: true
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      DB_HOST: ClientAPIDatabase
+      DB_NAME: ServiceStation
+      DB_SA_PASSWORD: Qwerty123
+      RBBITMQ_PASS: ' guest'
+      RBBITMQ_USER: ' guest'
+      REDIS: ClientAPIRedisCash
+    image: servicestationapi
+    labels:
+      com.microsoft.visual-studio.project-name: ServiceStation.API
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/ServiceStation.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "2030"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "2031"
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\mosso\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net7.0
+        target: /TokenService.Proxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net7.0
+        target: /HotReloadProxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  servicestationapidatabase:
+    container_name: ClientAPIDatabase
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: Qwerty123
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+  servicestationapirediscash:
+    container_name: ClientAPIRedisCash
+    image: redis:7
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+  taskmanagerformechanicdatabase:
+    container_name: MechanicAPIDatabase
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: Qwerty123
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1423"
+        protocol: tcp
+  taskmanagerformechanicweb:
+    build:
+      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
+      dockerfile: MechanicPart/TaskManagerForMechanic.WEB/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: TaskManagerForMechanic.WEB
+    container_name: MechanicAPI
+    depends_on:
+      mechanicidentiyserver:
+        condition: service_started
+        required: true
+      taskmanagerformechanicdatabase:
+        condition: service_started
+        required: true
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      DB_HOST: MechanicAPIDatabase
+      DB_NAME: ServiceStation
+      DB_SA_PASSWORD: Qwerty123
+      RBBITMQ_PASS: ' guest'
+      RBBITMQ_USER: ' guest'
+    image: taskmanagerformechanicweb
+    labels:
+      com.microsoft.visual-studio.project-name: TaskManagerForMechanic.WEB
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/TaskManagerForMechanic.WEB.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "2020"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "2021"
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\mosso\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net7.0
+        target: /TokenService.Proxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net7.0
+        target: /HotReloadProxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  webapplication:
+    build:
+      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
+      dockerfile: AdminPart/WebApplication/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: WebApplication
+    container_name: ManagerAPI
+    depends_on:
+      webapplicationdatabase:
+        condition: service_started
+        required: true
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      DB_HOST: ManagerAPIDatabase
+      DB_NAME: ServiceStation
+      DB_SA_PASSWORD: Qwerty123
+      RBBITMQ_PASS: ' guest'
+      RBBITMQ_USER: ' guest'
+    image: webapplication
+    labels:
+      com.microsoft.visual-studio.project-name: WebApplication
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/WebApplication.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "2040"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "2041"
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\mosso\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mosso\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net7.0
+        target: /TokenService.Proxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net7.0
+        target: /HotReloadProxy
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  webapplicationdatabase:
+    container_name: ManagerAPIDatabase
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: Qwerty123
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1443"
+        protocol: tcp
+networks:
+  ServiceStationNetwork:
+    name: dockercompose431493579175213511_ServiceStationNetwork

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ServiceStation.DAL.Exceptions
+﻿namespace ServiceStation.DAL.Exceptions
 {
     public class EntityNotFoundException : Exception
     {

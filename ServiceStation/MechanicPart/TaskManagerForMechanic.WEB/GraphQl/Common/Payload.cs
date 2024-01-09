@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using TaskManagerForMechanic.WEB.GraphQl.Common.Exceptions;
+﻿using TaskManagerForMechanic.WEB.GraphQl.Common.Exceptions;
 
 namespace TaskManagerForMechanic.WEB.GraphQl.Common
 {

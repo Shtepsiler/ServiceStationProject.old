@@ -17,10 +17,10 @@ namespace TaskManagerForMechanic.WEB.MessageBroker.Concumers
         {
             taskManagerDbContext.Jobs.AddAsync(new()
             {
-                ClientId= context.Message.ClientId,
+                ClientId = context.Message.ClientId,
                 Description = context.Message.Description,
                 FinishDate = context.Message.FinishDate,
-                IssueDate= context.Message.IssueDate,
+                IssueDate = context.Message.IssueDate,
                 ManagerId = context.Message.ManagerId,
                 MechanicId = context.Message.MechanicId,
                 ModelId = context.Message.ModelId,

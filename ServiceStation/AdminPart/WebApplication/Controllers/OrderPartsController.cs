@@ -1,15 +1,10 @@
 ﻿using Application.DTOs.Respponces;
-using Application.Operations.Jobs.Queries;
-using Application.Operations.Models.Commands;
 using Application.Operations.OrderParts.Commands;
 using Application.Operations.OrderParts.Queries;
-using Application.Operations.Orders.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
-using System.Runtime.CompilerServices;
 
 namespace WebApplication.Controllers
 {

@@ -1,0 +1,212 @@
+name: dockercompose431493579175213511
+services:
+  apigateway:
+    build:
+      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
+      dockerfile: API.GATEWAY/Dockerfile
+    container_name: API_GATEWAY
+    depends_on:
+      servicestationapi:
+        condition: service_started
+        required: true
+      taskmanagerformechanicweb:
+        condition: service_started
+        required: true
+      webapplication:
+        condition: service_started
+        required: true
+    image: apigateway
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "2000"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "2001"
+        protocol: tcp
+  mechanicidentiyserver:
+    build:
+      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
+      dockerfile: MechanicPart/MechanicIdentiyServer/Dockerfile
+    container_name: mechanicidentiyserver
+    image: mechanicidentiyserver
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "2023"
+        protocol: tcp
+  rabbitmq:
+    container_name: Rabbitmq
+    environment:
+      RBBITMQ_DEFAULT_PASS: guest
+      RBBITMQ_DEFAULT_USER: guest
+    image: rabbitmq:3.11.7-management
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 5672
+        published: "5672"
+        protocol: tcp
+      - mode: ingress
+        target: 15672
+        published: "15672"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\.containers\queue\data
+        target: /var/lib/rabbitmq
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\.containers\queue\log
+        target: /var/lib/rabbitmq
+        bind:
+          create_host_path: true
+  servicestationapi:
+    build:
+      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
+      dockerfile: ClientPart/ServiceStation.API/Dockerfile
+    container_name: ClientAPI
+    depends_on:
+      servicestationapidatabase:
+        condition: service_started
+        required: true
+      servicestationapirediscash:
+        condition: service_started
+        required: true
+    environment:
+      DB_HOST: ClientAPIDatabase
+      DB_NAME: ServiceStation
+      DB_SA_PASSWORD: Qwerty123
+      RBBITMQ_PASS: ' guest'
+      RBBITMQ_USER: ' guest'
+      REDIS: ClientAPIRedisCash
+    image: servicestationapi
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "2030"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "2031"
+        protocol: tcp
+  servicestationapidatabase:
+    container_name: ClientAPIDatabase
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: Qwerty123
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+  servicestationapirediscash:
+    container_name: ClientAPIRedisCash
+    image: redis:7
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+  taskmanagerformechanicdatabase:
+    container_name: MechanicAPIDatabase
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: Qwerty123
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1423"
+        protocol: tcp
+  taskmanagerformechanicweb:
+    build:
+      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
+      dockerfile: MechanicPart/TaskManagerForMechanic.WEB/Dockerfile
+    container_name: MechanicAPI
+    depends_on:
+      mechanicidentiyserver:
+        condition: service_started
+        required: true
+      taskmanagerformechanicdatabase:
+        condition: service_started
+        required: true
+    environment:
+      DB_HOST: MechanicAPIDatabase
+      DB_NAME: ServiceStation
+      DB_SA_PASSWORD: Qwerty123
+      RBBITMQ_PASS: ' guest'
+      RBBITMQ_USER: ' guest'
+    image: taskmanagerformechanicweb
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "2020"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "2021"
+        protocol: tcp
+  webapplication:
+    build:
+      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
+      dockerfile: AdminPart/WebApplication/Dockerfile
+    container_name: ManagerAPI
+    depends_on:
+      webapplicationdatabase:
+        condition: service_started
+        required: true
+    environment:
+      DB_HOST: ManagerAPIDatabase
+      DB_NAME: ServiceStation
+      DB_SA_PASSWORD: Qwerty123
+      RBBITMQ_PASS: ' guest'
+      RBBITMQ_USER: ' guest'
+    image: webapplication
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "2040"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "2041"
+        protocol: tcp
+  webapplicationdatabase:
+    container_name: ManagerAPIDatabase
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: Qwerty123
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1443"
+        protocol: tcp
+networks:
+  ServiceStationNetwork:
+    name: dockercompose431493579175213511_ServiceStationNetwork
+  default:
+    name: dockercompose431493579175213511_default

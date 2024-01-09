@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using ServiceStation.DAL.Entities;
 
 namespace ServiceStation.DAL.Data.Configurations
@@ -23,9 +22,9 @@ namespace ServiceStation.DAL.Data.Configurations
 
             builder.HasKey(p => p.Id);
 
-           /* builder.HasCheckConstraint(
-                       "constraint_status",
-                       "`Status` = 'Pending' or `Status` = 'In Progress'or `Status` = 'Finished'");*/
+            /* builder.HasCheckConstraint(
+                        "constraint_status",
+                        "`Status` = 'Pending' or `Status` = 'In Progress'or `Status` = 'Finished'");*/
 
             builder.HasOne(p => p.Manager).WithMany(p => p.Jobs);
             builder.HasOne(p => p.Model).WithMany(p => p.Jobs);

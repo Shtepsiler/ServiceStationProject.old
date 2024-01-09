@@ -8,6 +8,8 @@ using TaskManagerForMechanic.WEB.GraphQl.Types;
 using TaskManagerForMechanic.WEB.MessageBroker;
 using TaskManagerForMechanic.WEB.MessageBroker.Concumers;
 using TaskManagerForMechanic.WEB.MessageBroker.EventBus;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +25,7 @@ builder.Services.AddPooledDbContextFactory<TaskManagerDbContext>(options =>
     string connectionString = $"Data Source={dbhost};User ID=sa;Password={dbpass};Initial Catalog={dbname};Encrypt=True;Trust Server Certificate=True;";
     //  string connectionString = builder.Configuration.GetConnectionString("MSSQLConnection");
     options.UseSqlServer(connectionString);
-   
+
 
 });
 builder.Services.AddDbContext<TaskManagerDbContext>(options =>
@@ -71,8 +73,8 @@ builder.Services.AddMassTransit(busconf =>
         conf.ReceiveEndpoint(nameof(GeneralBusMessages.Message.Job), e =>
         {
             e.ConfigureConsumer(cont, typeof(JobConsumer));
- 
-        }); 
+
+        });
         conf.ReceiveEndpoint(nameof(GeneralBusMessages.Message.MechanicsTasks), e =>
         {
             e.ConfigureConsumer(cont, typeof(MechanicTaskConsumer));
@@ -80,6 +82,16 @@ builder.Services.AddMassTransit(busconf =>
     });
 
 
+});
+
+builder.Services.AddAuthentication("Bearer")
+.AddJwtBearer("Bearer", options =>
+{
+    options.Authority = "https://mechanicidentiyserver";
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateAudience = false
+    };
 });
 
 
@@ -98,13 +110,13 @@ builder.Services.AddGraphQLServer()
     .AddQueryType<Query>()
     .AddMutationType<Mutations>()
     .AddSubscriptionType<Subscriptions>()
-    
-    
+
+
     .AddInMemorySubscriptions()
-    
-    
+
+
     .AddSorting()
-    
+
     ;
 
 
@@ -124,7 +136,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseWebSockets();
 
-app.UseRouting().UseEndpoints(endpoints =>endpoints.MapGraphQL());
+app.UseRouting().UseEndpoints(endpoints => endpoints.MapGraphQL());
 
 app.UseAuthorization();
 

@@ -323,3 +323,4 @@ C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\Mec
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.WEB\obj\Debug\net7.0\TaskManagerForMechanic.WEB.pdb
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.WEB\obj\Debug\net7.0\TaskManagerForMechanic.WEB.genruntimeconfig.cache
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.WEB\obj\Debug\net7.0\ref\TaskManagerForMechanic.WEB.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.WEB\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

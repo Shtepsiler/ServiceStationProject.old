@@ -3,11 +3,6 @@ using ServiceStation.BLL.DTO.Responses;
 using ServiceStation.BLL.Services.Interfaces;
 using ServiceStation.DAL.Entities;
 using ServiceStation.DAL.Repositories.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ServiceStation.BLL.Services
 {
@@ -36,7 +31,7 @@ namespace ServiceStation.BLL.Services
         {
             try
             {
-                return mapper.Map< Mechanic,MechanicResponse >(await unitOfWork._MechanicRepository.GetByIdAsync(id));
+                return mapper.Map<Mechanic, MechanicResponse>(await unitOfWork._MechanicRepository.GetByIdAsync(id));
 
             }
             catch (Exception ex) { throw ex; }

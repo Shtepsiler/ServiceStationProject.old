@@ -5,9 +5,7 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
-RUN dotnet dev-certs https
 WORKDIR /src
 COPY ["API.GATEWAY/API.GATEWAY.csproj", "API.GATEWAY/"]
 RUN dotnet restore "API.GATEWAY/API.GATEWAY.csproj"

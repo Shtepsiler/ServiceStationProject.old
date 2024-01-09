@@ -3,7 +3,6 @@ using ServiceStation.DAL.Data;
 using ServiceStation.DAL.Entities;
 using ServiceStation.DAL.Repositories.Contracts;
 using System.Data;
-using System.Data.SqlClient;
 
 namespace ServiceStation.DAL.Repositories
 {

@@ -23,7 +23,7 @@ namespace ServiceStation.BLL.Services
             try
             {
                 var results = (List<Model>)await _unitOfWork._ModelRepository.GetAsync();
-                return  _maper.Map<List<Model>, List<ModelResponse>>(results);
+                return _maper.Map<List<Model>, List<ModelResponse>>(results);
                 ;
             }
             catch (Exception ex)
@@ -43,7 +43,7 @@ namespace ServiceStation.BLL.Services
                 }
                 else
                 {
-                    return  _maper.Map<Model,ModelResponse>(result);
+                    return _maper.Map<Model, ModelResponse>(result);
                 }
 
             }
@@ -59,7 +59,7 @@ namespace ServiceStation.BLL.Services
             try
             {
 
-              await _unitOfWork._ModelRepository.InsertAsync(_maper.Map<ModelRequest, Model>(Model));
+                await _unitOfWork._ModelRepository.InsertAsync(_maper.Map<ModelRequest, Model>(Model));
                 await _unitOfWork.SaveChangesAsync();
             }
             catch (Exception ex)
@@ -73,12 +73,12 @@ namespace ServiceStation.BLL.Services
 
             try
             {
-               
+
 
                 var event_entity = await _unitOfWork._ModelRepository.GetByIdAsync(id);
                 if (event_entity == null)
                 {
-                    
+
                 }
 
                 await _unitOfWork._ModelRepository.UpdateAsync(_maper.Map<ModelRequest, Model>(Model));
@@ -87,7 +87,7 @@ namespace ServiceStation.BLL.Services
             }
             catch (Exception ex)
             {
-               
+
             }
         }
 

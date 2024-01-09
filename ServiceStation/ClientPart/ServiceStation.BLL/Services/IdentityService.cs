@@ -43,23 +43,23 @@ namespace ServiceStation.BLL.Services
             {
                 throw new EntityNotFoundException("Incorrect username or password.");
             }
-         /*   if (user.EmailConfirmed)
-            {
-                var userId = await userManager.GetUserIdAsync(user);
-                var code = await userManager.GenerateEmailConfirmationTokenAsync(user);
-                code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                var callbackUrl = pageModel.Url.Page(
-                    "/Account/ConfirmEmail",
-                    pageHandler: null,
-                    values: new { area = "Identity", userId = userId, code = code, },
-                    protocol: pageModel.Request.Scheme);
+            /*   if (user.EmailConfirmed)
+               {
+                   var userId = await userManager.GetUserIdAsync(user);
+                   var code = await userManager.GenerateEmailConfirmationTokenAsync(user);
+                   code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+                   var callbackUrl = pageModel.Url.Page(
+                       "/Account/ConfirmEmail",
+                       pageHandler: null,
+                       values: new { area = "Identity", userId = userId, code = code, },
+                       protocol: pageModel.Request.Scheme);
 
-                await emailSender.SendEmailAsync(user.Email, "Confirm your email",
-   $"Please confirm your account by visiting the following URL:\r\n\r\n{callbackUrl}");
-            }*/
+                   await emailSender.SendEmailAsync(user.Email, "Confirm your email",
+      $"Please confirm your account by visiting the following URL:\r\n\r\n{callbackUrl}");
+               }*/
 
             var jwtToken = tokenService.BuildToken(user);
-            return new() {Id=user.Id ,Token = tokenService.SerializeToken(jwtToken), ClientName = user.UserName, RefreshToken= tokenService.GetRefreshToken(user.UserName) };
+            return new() { Id = user.Id, Token = tokenService.SerializeToken(jwtToken), ClientName = user.UserName, RefreshToken = tokenService.GetRefreshToken(user.UserName) };
         }
 
 
@@ -81,27 +81,27 @@ namespace ServiceStation.BLL.Services
             var newClient = await userManager.FindByNameAsync(request.UserName);
 
 
-           /* if (user.EmailConfirmed)
-            {
-                var userId = await userManager.GetUserIdAsync(user);
-                var code = await userManager.GenerateEmailConfirmationTokenAsync(user);
-                code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                var callbackUrl = pageModel.Url.Page(
-                    "/Account/ConfirmEmail",
-                    pageHandler: null,
-                    values: new { area = "Identity", userId = userId, code = code, },
-                    protocol: pageModel.Request.Scheme);
+            /* if (user.EmailConfirmed)
+             {
+                 var userId = await userManager.GetUserIdAsync(user);
+                 var code = await userManager.GenerateEmailConfirmationTokenAsync(user);
+                 code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+                 var callbackUrl = pageModel.Url.Page(
+                     "/Account/ConfirmEmail",
+                     pageHandler: null,
+                     values: new { area = "Identity", userId = userId, code = code, },
+                     protocol: pageModel.Request.Scheme);
 
-                await emailSender.SendEmailAsync(user.Email, "Confirm your email",
-   $"Please confirm your account by visiting the following URL:\r\n\r\n{callbackUrl}");
-            }
-*/
+                 await emailSender.SendEmailAsync(user.Email, "Confirm your email",
+    $"Please confirm your account by visiting the following URL:\r\n\r\n{callbackUrl}");
+             }
+ */
 
             try
             {
-              //  var newClient = await userManager.FindByNameAsync(request.UserName);
+                //  var newClient = await userManager.FindByNameAsync(request.UserName);
                 var jwtToken = tokenService.BuildToken(user);
-            return new() {ClientName = newClient.UserName  , Token = tokenService.SerializeToken(jwtToken), RefreshToken = tokenService.GetRefreshToken(user.UserName) };
+                return new() { ClientName = newClient.UserName, Token = tokenService.SerializeToken(jwtToken), RefreshToken = tokenService.GetRefreshToken(user.UserName) };
             }
             catch (Exception ex) { throw new Exception("database troble"); }
         }

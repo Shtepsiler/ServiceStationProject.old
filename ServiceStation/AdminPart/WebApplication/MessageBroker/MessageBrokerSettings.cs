@@ -1,6 +1,4 @@
-﻿using MassTransit.Configuration;
-
-namespace WebApplication.MessageBroker
+﻿namespace WebApplication.MessageBroker
 {
     public class MessageBrokerSettings
     {

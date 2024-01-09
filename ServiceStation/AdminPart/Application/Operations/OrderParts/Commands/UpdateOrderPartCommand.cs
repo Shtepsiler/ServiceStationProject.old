@@ -3,7 +3,6 @@ using Application.Interfaces;
 using Domain.Entities;
 using Domain.Exeptions;
 using MediatR;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Application.Operations.OrderParts.Commands;
 

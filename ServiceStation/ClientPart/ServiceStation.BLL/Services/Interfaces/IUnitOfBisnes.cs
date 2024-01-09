@@ -10,6 +10,6 @@ namespace ServiceStation.BLL.Services.Interfaces
         IModelService _ModelService { get; }
         IManagerService _ManagerService { get; }
         ITokenService _TokenService { get; }
-        IMechanicService _MechanicService { get; }  
+        IMechanicService _MechanicService { get; }
     }
 }

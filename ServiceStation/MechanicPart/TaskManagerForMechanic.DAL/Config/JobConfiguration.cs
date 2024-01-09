@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using TaskManagerForMechanic.DAL.Entitys;
 
 namespace TaskManagerForMechanic.DAL.Config
@@ -27,10 +26,10 @@ namespace TaskManagerForMechanic.DAL.Config
                         "constraint_status",
                         "`Status` = 'Pending' or `Status` = 'In Progress'or `Status` = 'Finished'");*/
 
-          /*  builder.HasOne(p => p.Manager).WithMany(p => p.Jobs);
-            builder.HasOne(p => p.Model).WithMany(p => p.Jobs);*/
+            /*  builder.HasOne(p => p.Manager).WithMany(p => p.Jobs);
+              builder.HasOne(p => p.Model).WithMany(p => p.Jobs);*/
             builder.HasOne(p => p.Mechanic).WithMany(p => p.Jobs);
-          /*  builder.HasOne(p => p.Client).WithMany(p => p.Jobs);*/
+            /*  builder.HasOne(p => p.Client).WithMany(p => p.Jobs);*/
 
         }
     }

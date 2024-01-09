@@ -1,12 +1,9 @@
 ﻿using AutoMapper;
-using Azure.Core;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 using ServiceStation.BLL.DTO.Requests;
 using ServiceStation.BLL.DTO.Responses;
-using ServiceStation.BLL.Services;
 using ServiceStation.BLL.Services.Interfaces;
 using ServiceStation.DAL.Entities;
 using ServiceStation.DAL.Repositories.Contracts;
@@ -64,13 +61,13 @@ namespace ServiceStation.API.Controllers
 
         //GET: api/jobs/Id
         /*  [Authorize]*/
-        [Authorize]
+       
         [HttpGet("{name}")]
         public async Task<ActionResult<ClientResponse>> GetByNameAsync(string name)
         {
             try
             {
-                var result = _mapper.Map<Client, ClientResponse>( await _UnitOfWork._ClientManager.FindByNameAsync(name));
+                var result = _mapper.Map<Client, ClientResponse>(await _UnitOfWork._ClientManager.FindByNameAsync(name));
 
                 if (result == null)
                 {
@@ -91,9 +88,9 @@ namespace ServiceStation.API.Controllers
             }
         }
 
-  
-       
-       
+
+
+
         //POST: api/jobs/Id
         [Authorize]
         [HttpPut("{name}")]
@@ -111,7 +108,8 @@ namespace ServiceStation.API.Controllers
                     _logger.LogInformation($"Ми отримали некоректний json зі сторони клієнта");
                     return BadRequest("Обєкт  є некоректним");
                 }
-                if (name != client.ClientName) {
+                if (name != client.ClientName)
+                {
                     _logger.LogInformation($"Ми отримали некоректний json зі сторони клієнта");
                     return BadRequest("Обєкт  є некоректним");
                 }

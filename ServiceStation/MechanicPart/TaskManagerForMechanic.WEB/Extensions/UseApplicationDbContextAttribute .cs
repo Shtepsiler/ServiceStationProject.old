@@ -12,7 +12,7 @@ namespace TaskManagerForMechanic.WEB.Extensions
            IObjectFieldDescriptor descriptor,
            MemberInfo member)
         {
-            descriptor.UseDbContext<TaskManagerDbContext> ();
+            descriptor.UseDbContext<TaskManagerDbContext>();
         }
     }
 

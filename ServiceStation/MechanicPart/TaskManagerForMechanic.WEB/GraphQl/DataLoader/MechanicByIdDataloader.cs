@@ -9,7 +9,7 @@ namespace TaskManagerForMechanic.WEB.GraphQl.DataLoader
     {
         private readonly IDbContextFactory<TaskManagerDbContext> _dbContextFactory;
 
-        public MechanicByIdDataloader(IBatchScheduler batchScheduler, IDbContextFactory<TaskManagerDbContext> dbContextFactory):base(batchScheduler)
+        public MechanicByIdDataloader(IBatchScheduler batchScheduler, IDbContextFactory<TaskManagerDbContext> dbContextFactory) : base(batchScheduler)
         {
             _dbContextFactory = dbContextFactory ??
                 throw new ArgumentNullException(nameof(dbContextFactory));
@@ -22,7 +22,7 @@ namespace TaskManagerForMechanic.WEB.GraphQl.DataLoader
 
             return await dbContext.Mechanics.
                 Where(p => keys.Contains(p.Id)).
-                ToDictionaryAsync(t=>t.Id,cancellationToken);
+                ToDictionaryAsync(t => t.Id, cancellationToken);
 
 
         }

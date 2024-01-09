@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
-using System.Collections;
-using TaskManagerForMechanic.DAL;
+﻿using TaskManagerForMechanic.DAL;
 using TaskManagerForMechanic.DAL.Entitys;
 
 using TaskManagerForMechanic.WEB.Extensions;
@@ -77,15 +75,15 @@ namespace TaskManagerForMechanic.WEB.GraphQl
 
 
         [UseApplicationDbContext]
-        public async Task<Mechanic>  Login([ScopedService] TaskManagerDbContext context, string phone, string password)
+        public async Task<Mechanic> Login([ScopedService] TaskManagerDbContext context, string phone, string password)
         {
 
             var mechanic = context.Mechanics.Where(p => p.Phone == phone).First();
-            if(mechanic.Password == password)
+            if (mechanic.Password == password)
             {
                 return mechanic;
             }
-            return null; 
+            return null;
 
 
         }

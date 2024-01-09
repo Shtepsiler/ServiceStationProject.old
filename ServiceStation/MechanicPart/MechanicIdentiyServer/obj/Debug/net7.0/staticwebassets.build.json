@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KZrcEzAZaOinI2vXe3uBtXgIm+JJFnzSQkorF7n6ej8=",
+  "Source": "MechanicIdentiyServer",
+  "BasePath": "_content/MechanicIdentiyServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

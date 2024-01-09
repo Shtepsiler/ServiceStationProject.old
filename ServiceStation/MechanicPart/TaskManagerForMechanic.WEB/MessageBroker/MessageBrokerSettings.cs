@@ -1,6 +1,4 @@
-﻿using MassTransit.Configuration;
-
-namespace TaskManagerForMechanic.WEB.MessageBroker;
+﻿namespace TaskManagerForMechanic.WEB.MessageBroker;
 
 public class MessageBrokerSettings
 {

@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
@@ -60,7 +59,7 @@ namespace ServiceStation.API.Controllers
                 }
                 _logger.LogInformation($"MechanicController            GetAllAsync");
                 return Ok(mechanicList);
-               
+
             }
             catch (Exception ex)
             {

@@ -2,8 +2,6 @@
 using Domain.Entities;
 using Domain.Exeptions;
 using MediatR;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Application.Operations.Jobs.Commands
 {

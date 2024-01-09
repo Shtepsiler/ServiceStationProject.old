@@ -1,6 +1,5 @@
 ﻿using ServiceStation.BLL.DTO.Requests;
 using ServiceStation.BLL.DTO.Responses;
-using System.Threading.Tasks;
 
 namespace ServiceStation.BLL.Services.Interfaces
 {
@@ -11,6 +10,6 @@ namespace ServiceStation.BLL.Services.Interfaces
         Task<JwtResponse> SignUpAsync(ClientSignUpRequest request);
 
 
-    //    Task SignUpWihtoutjvtAsync(ClientSignUpRequest request);
+        //    Task SignUpWihtoutjvtAsync(ClientSignUpRequest request);
     }
 }

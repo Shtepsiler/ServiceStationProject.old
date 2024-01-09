@@ -1,6 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Domain.Entities;
-using Application.DTOs.Respponces;
+﻿using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Application.Interfaces
 {

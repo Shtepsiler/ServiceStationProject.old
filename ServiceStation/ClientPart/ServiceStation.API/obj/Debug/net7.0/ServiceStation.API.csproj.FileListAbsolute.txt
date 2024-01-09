@@ -398,3 +398,12 @@ C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\Cli
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.pdb
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ServiceStation.API.genruntimeconfig.cache
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\obj\Debug\net7.0\ref\ServiceStation.API.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Google.Api.CommonProtos.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Google.Protobuf.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Grpc.AspNetCore.Server.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Grpc.Core.Api.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Grpc.Net.Client.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Grpc.Net.ClientFactory.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Grpc.Net.Common.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Grpc.JsonTranscoding.dll

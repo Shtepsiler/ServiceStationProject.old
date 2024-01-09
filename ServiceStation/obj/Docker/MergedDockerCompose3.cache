@@ -3,54 +3,48 @@ services:
   api.gateway:
     build:
       context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
-      dockerfile: Dockerfile
+      dockerfile: API.GATEWAY/Dockerfile
       labels:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: API.GATEWAY
-      target: base
+    container_name: API_GATEWAY
+    depends_on:
+      servicestationapi:
+        condition: service_started
+        required: true
+      taskmanagerformechanicweb:
+        condition: service_started
+        required: true
+      webapplication:
+        condition: service_started
+        required: true
     entrypoint:
       - tail
       - -f
       - /dev/null
-    environment:
-      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
-      DOTNET_USE_POLLING_FILE_WATCHER: "1"
-      NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
-    image: apigateway:dev
+    image: apigateway
     labels:
-      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net7.0/API.GATEWAY.dll"'
+      com.microsoft.visual-studio.project-name: API.GATEWAY
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/API.GATEWAY.dll"'
       com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
     networks:
-      default: null
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "2000"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "2001"
+        protocol: tcp
     tty: true
     volumes:
       - type: bind
-        source: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\API.GATEWAY
-        target: /app
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
-        target: /src
-        bind:
-          create_host_path: true
-      - type: bind
         source: C:\Users\mosso\vsdbg\vs2017u5
         target: /remote_debugger
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\mosso\.nuget\packages\
-        target: /.nuget/packages
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
-        target: /.nuget/fallbackpackages
-        read_only: true
         bind:
           create_host_path: true
       - type: bind
@@ -95,33 +89,6 @@ services:
         read_only: true
         bind:
           create_host_path: true
-  apigateway:
-    build:
-      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
-      dockerfile: API.GATEWAY/Dockerfile
-    container_name: API_GATEWAY
-    depends_on:
-      servicestationapi:
-        condition: service_started
-        required: true
-      taskmanagerformechanicweb:
-        condition: service_started
-        required: true
-      webapplication:
-        condition: service_started
-        required: true
-    image: apigateway
-    networks:
-      ServiceStationNetwork: null
-    ports:
-      - mode: ingress
-        target: 80
-        published: "2000"
-        protocol: tcp
-      - mode: ingress
-        target: 443
-        published: "2001"
-        protocol: tcp
   rabbitmq:
     container_name: Rabbitmq
     environment:
@@ -150,57 +117,55 @@ services:
         target: /var/lib/rabbitmq
         bind:
           create_host_path: true
-  servicestation.api:
+  servicestationapi:
     build:
       context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
-      dockerfile: Dockerfile
+      dockerfile: ClientPart/ServiceStation.API/Dockerfile
       labels:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: ServiceStation.API
-      target: base
+    container_name: ClientAPI
+    depends_on:
+      servicestationapidatabase:
+        condition: service_started
+        required: true
+      servicestationapirediscash:
+        condition: service_started
+        required: true
     entrypoint:
       - tail
       - -f
       - /dev/null
     environment:
-      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
-      DOTNET_USE_POLLING_FILE_WATCHER: "1"
-      NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
-    image: servicestationapi:dev
+      DB_HOST: ClientAPIDatabase
+      DB_NAME: ServiceStation
+      DB_SA_PASSWORD: Qwerty123
+      RBBITMQ_PASS: ' guest'
+      RBBITMQ_USER: ' guest'
+      REDIS: ClientAPIRedisCash
+    image: servicestationapi
     labels:
-      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net7.0/ServiceStation.API.dll"'
+      com.microsoft.visual-studio.project-name: ServiceStation.API
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/ServiceStation.API.dll"'
       com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
     networks:
-      default: null
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "2030"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "2031"
+        protocol: tcp
     tty: true
     volumes:
       - type: bind
-        source: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\ClientPart\ServiceStation.API
-        target: /app
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
-        target: /src
-        bind:
-          create_host_path: true
-      - type: bind
         source: C:\Users\mosso\vsdbg\vs2017u5
         target: /remote_debugger
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\mosso\.nuget\packages\
-        target: /.nuget/packages
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
-        target: /.nuget/fallbackpackages
-        read_only: true
         bind:
           create_host_path: true
       - type: bind
@@ -245,37 +210,6 @@ services:
         read_only: true
         bind:
           create_host_path: true
-  servicestationapi:
-    build:
-      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
-      dockerfile: ClientPart/ServiceStation.API/Dockerfile
-    container_name: ClientAPI
-    depends_on:
-      servicestationapidatabase:
-        condition: service_started
-        required: true
-      servicestationapirediscash:
-        condition: service_started
-        required: true
-    environment:
-      DB_HOST: ClientAPIDatabase
-      DB_NAME: ServiceStation
-      DB_SA_PASSWORD: Qwerty123
-      RBBITMQ_PASS: ' guest'
-      RBBITMQ_USER: ' guest'
-      REDIS: ClientAPIRedisCash
-    image: servicestationapi
-    networks:
-      ServiceStationNetwork: null
-    ports:
-      - mode: ingress
-        target: 80
-        published: "2030"
-        protocol: tcp
-      - mode: ingress
-        target: 443
-        published: "2031"
-        protocol: tcp
   servicestationapidatabase:
     container_name: ClientAPIDatabase
     environment:
@@ -299,57 +233,64 @@ services:
         target: 6379
         published: "6379"
         protocol: tcp
-  taskmanagerformechanic.web:
+  taskmanagerformechanicdatabase:
+    container_name: MechanicAPIDatabase
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: Qwerty123
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1423"
+        protocol: tcp
+  taskmanagerformechanicweb:
     build:
       context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
-      dockerfile: Dockerfile
+      dockerfile: MechanicPart/TaskManagerForMechanic.WEB/Dockerfile
       labels:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: TaskManagerForMechanic.WEB
-      target: base
+    container_name: MechanicAPI
+    depends_on:
+      taskmanagerformechanicdatabase:
+        condition: service_started
+        required: true
     entrypoint:
       - tail
       - -f
       - /dev/null
     environment:
-      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
-      DOTNET_USE_POLLING_FILE_WATCHER: "1"
-      NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
-    image: taskmanagerformechanicweb:dev
+      DB_HOST: MechanicAPIDatabase
+      DB_NAME: ServiceStation
+      DB_SA_PASSWORD: Qwerty123
+      RBBITMQ_PASS: ' guest'
+      RBBITMQ_USER: ' guest'
+    image: taskmanagerformechanicweb
     labels:
-      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net7.0/TaskManagerForMechanic.WEB.dll"'
+      com.microsoft.visual-studio.project-name: TaskManagerForMechanic.WEB
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/TaskManagerForMechanic.WEB.dll"'
       com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
     networks:
-      default: null
+      ServiceStationNetwork: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "2020"
+        protocol: tcp
+      - mode: ingress
+        target: 443
+        published: "2021"
+        protocol: tcp
     tty: true
     volumes:
       - type: bind
-        source: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\MechanicPart\TaskManagerForMechanic.WEB
-        target: /app
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
-        target: /src
-        bind:
-          create_host_path: true
-      - type: bind
         source: C:\Users\mosso\vsdbg\vs2017u5
         target: /remote_debugger
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\mosso\.nuget\packages\
-        target: /.nuget/packages
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
-        target: /.nuget/fallbackpackages
-        read_only: true
         bind:
           create_host_path: true
       - type: bind
@@ -394,46 +335,6 @@ services:
         read_only: true
         bind:
           create_host_path: true
-  taskmanagerformechanicdatabase:
-    container_name: MechanicAPIDatabase
-    environment:
-      ACCEPT_EULA: "Y"
-      MSSQL_SA_PASSWORD: Qwerty123
-    image: mcr.microsoft.com/mssql/server:2022-latest
-    networks:
-      ServiceStationNetwork: null
-    ports:
-      - mode: ingress
-        target: 1433
-        published: "1423"
-        protocol: tcp
-  taskmanagerformechanicweb:
-    build:
-      context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
-      dockerfile: MechanicPart/TaskManagerForMechanic.WEB/Dockerfile
-    container_name: MechanicAPI
-    depends_on:
-      taskmanagerformechanicdatabase:
-        condition: service_started
-        required: true
-    environment:
-      DB_HOST: MechanicAPIDatabase
-      DB_NAME: ServiceStation
-      DB_SA_PASSWORD: Qwerty123
-      RBBITMQ_PASS: ' guest'
-      RBBITMQ_USER: ' guest'
-    image: taskmanagerformechanicweb
-    networks:
-      ServiceStationNetwork: null
-    ports:
-      - mode: ingress
-        target: 80
-        published: "2020"
-        protocol: tcp
-      - mode: ingress
-        target: 443
-        published: "2021"
-        protocol: tcp
   webapplication:
     build:
       context: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
@@ -441,7 +342,6 @@ services:
       labels:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: WebApplication
-      target: base
     container_name: ManagerAPI
     depends_on:
       webapplicationdatabase:
@@ -452,17 +352,15 @@ services:
       - -f
       - /dev/null
     environment:
-      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
       DB_HOST: ManagerAPIDatabase
       DB_NAME: ServiceStation
       DB_SA_PASSWORD: Qwerty123
-      DOTNET_USE_POLLING_FILE_WATCHER: "1"
-      NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
       RBBITMQ_PASS: ' guest'
       RBBITMQ_USER: ' guest'
-    image: webapplication:dev
+    image: webapplication
     labels:
-      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net7.0/WebApplication.dll"'
+      com.microsoft.visual-studio.project-name: WebApplication
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/WebApplication.dll"'
       com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
@@ -480,30 +378,8 @@ services:
     tty: true
     volumes:
       - type: bind
-        source: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\AdminPart\WebApplication
-        target: /app
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation
-        target: /src
-        bind:
-          create_host_path: true
-      - type: bind
         source: C:\Users\mosso\vsdbg\vs2017u5
         target: /remote_debugger
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\mosso\.nuget\packages\
-        target: /.nuget/packages
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
-        target: /.nuget/fallbackpackages
-        read_only: true
         bind:
           create_host_path: true
       - type: bind
@@ -564,5 +440,3 @@ services:
 networks:
   ServiceStationNetwork:
     name: dockercompose431493579175213511_ServiceStationNetwork
-  default:
-    name: dockercompose431493579175213511_default

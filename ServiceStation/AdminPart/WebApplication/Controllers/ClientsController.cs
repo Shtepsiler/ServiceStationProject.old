@@ -1,11 +1,8 @@
 ﻿using Application.DTOs.Respponces;
 using Application.Operations.Clients.Commands;
 using Application.Operations.Clients.Queries;
-using Application.Operations.Jobs.Commands;
-using Application.Operations.Jobs.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 

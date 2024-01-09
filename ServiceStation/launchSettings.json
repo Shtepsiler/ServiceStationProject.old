@@ -7,7 +7,8 @@
         "servicestation.api": "StartDebugging",
         "taskmanagerformechanic.web": "StartDebugging",
         "webapplication": "StartDebugging",
-        "api.gateway": "StartDebugging"
+        "api.gateway": "StartDebugging",
+        "mechanicidentiyserver": "StartDebugging"
       }
     }
   }

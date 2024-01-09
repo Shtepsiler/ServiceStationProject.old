@@ -22,10 +22,10 @@ namespace ServiceStation.BLL.Mapping
         private void CreateJobMap()
         {
             CreateMap<Job, ClientsJobsResponse>()
-                .ForMember(r=>r.ManagerName,opt=>opt.MapFrom(manager => $"{manager.Manager.FullName}"))
+                .ForMember(r => r.ManagerName, opt => opt.MapFrom(manager => $"{manager.Manager.FullName}"))
                 .ForMember(r => r.ManagerPhone, opt => opt.MapFrom(manager => $"{manager.Manager.PhoneNumber}"))
-                .ForMember(r=>r.MechanicFullName,opt=>opt.MapFrom(mech=>$"{mech.Mechanic.FirstName} {mech.Mechanic.LastName}"))
-                .ForMember(r=>r.Model,opt=>opt.MapFrom(model => model.Model.Name))
+                .ForMember(r => r.MechanicFullName, opt => opt.MapFrom(mech => $"{mech.Mechanic.FirstName} {mech.Mechanic.LastName}"))
+                .ForMember(r => r.Model, opt => opt.MapFrom(model => model.Model.Name))
                 ;
             CreateMap<Job, JobResponse>().ReverseMap();
             CreateMap<JobRequest, Job>().ReverseMap();
@@ -33,13 +33,14 @@ namespace ServiceStation.BLL.Mapping
 
         private void CreateManagerMap()
         {
-            CreateMap<Manager,ManagerResponse>();
+            CreateMap<Manager, ManagerResponse>();
             CreateMap<ManagerRequest, Manager>();
 
 
         }
-        private void CreateMechanicMap() {
-            CreateMap<Mechanic,MechanicResponse>().ReverseMap();
+        private void CreateMechanicMap()
+        {
+            CreateMap<Mechanic, MechanicResponse>().ReverseMap();
             CreateMap<Mechanic, MechanicPublicResponse>().ReverseMap();
 
         }
@@ -55,7 +56,7 @@ namespace ServiceStation.BLL.Mapping
         private void CreateClientMap()
         {
             CreateMap<Client, ClientResponse>().ForMember(r => r.ClientName, opt => opt.MapFrom(client => client.UserName)).ReverseMap();
-            CreateMap<ClientRequest , Client > ().ForMember(r => r.UserName, opt => opt.MapFrom(client => client.ClientName)).ReverseMap();
+            CreateMap<ClientRequest, Client>().ForMember(r => r.UserName, opt => opt.MapFrom(client => client.ClientName)).ReverseMap();
 
         }
 

@@ -5,7 +5,7 @@ using TaskManagerForMechanic.WEB.GraphQl.DataLoader;
 
 namespace TaskManagerForMechanic.WEB.GraphQl.Types
 {
-    public class MechanicTaskType:ObjectType<MechanicsTasks>
+    public class MechanicTaskType : ObjectType<MechanicsTasks>
     {
         protected override void Configure(IObjectTypeDescriptor<MechanicsTasks> descriptor)
         {
@@ -25,7 +25,7 @@ namespace TaskManagerForMechanic.WEB.GraphQl.Types
 
             descriptor
                 .Field(t => t.Mechanic)
-             //   .UsePaging()
+                //   .UsePaging()
                 .ResolveWith<MechanicTasksResolvers>(t => t.GetMechanicAsync(default!, default!, default!, default))
                 .UseDbContext<TaskManagerDbContext>()
                 .Name("mechanic");
@@ -68,5 +68,5 @@ namespace TaskManagerForMechanic.WEB.GraphQl.Types
 
         }
 
-        }
+    }
 }

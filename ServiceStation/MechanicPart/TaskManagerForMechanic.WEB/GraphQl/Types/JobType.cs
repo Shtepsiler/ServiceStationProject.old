@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.Design;
 using TaskManagerForMechanic.DAL;
 using TaskManagerForMechanic.DAL.Entitys;
 using TaskManagerForMechanic.WEB.Extensions;
@@ -29,7 +28,7 @@ namespace TaskManagerForMechanic.WEB.GraphQl.Types
                 {
                     MaxPageSize = 4,
                     DefaultPageSize = 4,
-                    
+
 
                 })
                 .ResolveWith<JobResolvers>(t => t.GeTasksAsync(default!, default!, default!, default))
@@ -49,7 +48,7 @@ namespace TaskManagerForMechanic.WEB.GraphQl.Types
             MechanicByIdDataloader mechanicById,
             CancellationToken cancellationToken)
             {
-                    return await mechanicById.LoadAsync(job.MechanicId.Value, cancellationToken);
+                return await mechanicById.LoadAsync(job.MechanicId.Value, cancellationToken);
             }
 
             public async Task<IEnumerable<MechanicsTasks>> GeTasksAsync(
@@ -60,7 +59,7 @@ namespace TaskManagerForMechanic.WEB.GraphQl.Types
             {
                 int[] tasksIds = await dbContext.MechanicsTasks
                     .Where(a => a.JobId == job.Id)
-                    .Select(p=>p.Id)
+                    .Select(p => p.Id)
                     .ToArrayAsync();
 
                 return await tasksById.LoadAsync(tasksIds, cancellationToken);

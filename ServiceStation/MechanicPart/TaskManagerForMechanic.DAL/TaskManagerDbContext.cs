@@ -15,7 +15,7 @@ namespace TaskManagerForMechanic.DAL
         public DbSet<Job> Jobs { get; set; }
         public DbSet<Mechanic> Mechanics { get; set; }
         public DbSet<MechanicsTasks> MechanicsTasks { get; set; }
-     
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace TaskManagerForMechanic.DAL
             modelBuilder.ApplyConfiguration(new JobConfiguration());
             modelBuilder.ApplyConfiguration(new MechanicConfiguration());
             modelBuilder.ApplyConfiguration(new MechanicsTasksConfiguration());
-           
+
 
         }
 

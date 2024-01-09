@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using ServiceStation.DAL.Entities;
 using ServiceStation.DAL.Data.Configurations;
-using Microsoft.AspNetCore.Identity;
+using ServiceStation.DAL.Entities;
 
 namespace ServiceStation.DAL.Data
 {
     public class ServiceStationDContext : IdentityDbContext<IdentityUser<int>, IdentityRole<int>, int>
-    {    
+    {
         public ServiceStationDContext(DbContextOptions contextOptions) : base(contextOptions)
         {
             Database.EnsureCreated();
@@ -27,7 +27,7 @@ namespace ServiceStation.DAL.Data
         public DbSet<PartNeeded> PartsNeeded { get; set; }
         public DbSet<Vendor> Vendors { get; set; }
 
-    
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

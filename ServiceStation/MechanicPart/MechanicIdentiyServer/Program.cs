@@ -1,20 +1,36 @@
+using IdentityServer4.Models;
+using IdentityServer4.Test;
+using MechanicIdentiyServer.Config;
+using MechanicIdentiyServer.Data;
+using Microsoft.Extensions.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 
-
-builder.Services.AddIdentityServer();
-
+builder.Services.AddControllers();
+builder.Services.AddAuthorization();
 builder.Services.AddIdentityServer()
- .AddInMemoryClients(new List<Client>())
- .AddInMemoryIdentityResources(new List<IdentityResource>())
- .AddInMemoryApiResources(new List<ApiResource>())
- .AddInMemoryApiScopes(new List<ApiScope>())
- .AddTestUsers(new List<TestUser>())
+ .AddInMemoryClients(Config.Clients)
+ //.AddInMemoryIdentityResources(Config.IdentityResources)
+ //.AddInMemoryApiResources(Config.ApiResources)
+ .AddInMemoryApiScopes(Config.ApiScopes)
+// .AddTestUsers(Config.TestUsers)
  .AddDeveloperSigningCredential();
 
-
 var app = builder.Build();
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+app.UseRouting();
+app.UseIdentityServer();
+app.UseAuthorization();
 
-app.MapGet("/", () => "Hello World!");
-
+app.UseEndpoints(endpoints =>
+{
+    app.UseEndpoints(endpoints =>
+    {
+        endpoints.MapDefaultControllerRoute();
+    });
+});
 app.Run();

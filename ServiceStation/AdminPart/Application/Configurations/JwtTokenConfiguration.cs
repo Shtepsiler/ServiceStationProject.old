@@ -1,7 +1,6 @@
-﻿using System;
-using System.Text;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace Application.Configurations
 {

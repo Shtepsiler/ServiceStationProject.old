@@ -1,7 +1,6 @@
 {
   "Routes": [
     {
-<<<<<<< HEAD
       "UpstreamPathTemplate": "/manager/swagger/{everything}",
       "SwaggerKey": "manager",
       "UpstreamHttpMethod": [
@@ -21,8 +20,6 @@
 
     },
     {
-=======
->>>>>>> 9962e94071c44cc0896355cfdc8e0ef2d4175fd9
       "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
       "SwaggerKey": "manager",

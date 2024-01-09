@@ -1,9 +1,7 @@
 ﻿
 using Application.Interfaces;
-using Application.Operations.Vendors.Commands;
 using Domain.Entities;
 using MediatR;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Application.Operations.Jobs.Commands;
 

@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
-
 namespace ServiceStation.DAL.Repositories.Contracts
 {
     public interface IGenericRepository<TEntity> where TEntity : class

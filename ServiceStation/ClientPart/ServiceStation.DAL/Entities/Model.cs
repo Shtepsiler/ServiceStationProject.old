@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ServiceStation.DAL.Entities
 {
     public class Model
     {
-        public Model( string name)
+        public Model(string name)
         {
             Name = name;
         }

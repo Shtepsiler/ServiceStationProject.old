@@ -14,7 +14,7 @@ namespace ServiceStation.DAL.Data.Configurations
             builder.Property(p => p.PartId);
             builder.Property(p => p.Quantity);
 
-            builder.HasKey(p =>p.Id);
+            builder.HasKey(p => p.Id);
 
 
             builder.HasOne(p => p.Job).WithMany(p => p.PartNeededs);

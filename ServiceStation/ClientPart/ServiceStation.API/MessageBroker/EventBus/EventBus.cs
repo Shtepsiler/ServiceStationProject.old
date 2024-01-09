@@ -11,7 +11,7 @@ namespace ServiceStation.API.MessageBroker.EventBus
             _endpoint = endpoint;
         }
 
-        public Task PublishAsync<T>(T Message, CancellationToken cancellationToken = default) where T : class 
+        public Task PublishAsync<T>(T Message, CancellationToken cancellationToken = default) where T : class
         {
             _endpoint.Publish<T>(Message, cancellationToken);
             return Task.CompletedTask;

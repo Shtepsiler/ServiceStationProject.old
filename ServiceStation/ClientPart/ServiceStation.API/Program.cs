@@ -1,31 +1,28 @@
+using FluentValidation;
+using MassTransit;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using ServiceStation.API.MessageBroker;
+using ServiceStation.API.MessageBroker.EventBus;
+//using ServiceStation.API.Proto_Services;
 using ServiceStation.BLL.Configurations;
-using ServiceStation.BLL.Factories.Interfaces;
+using ServiceStation.BLL.DTO.Requests;
 using ServiceStation.BLL.Factories;
+using ServiceStation.BLL.Factories.Interfaces;
 using ServiceStation.BLL.Mapping;
 using ServiceStation.BLL.Services;
 using ServiceStation.BLL.Services.Interfaces;
+using ServiceStation.BLL.Validation;
 using ServiceStation.DAL.Data;
 using ServiceStation.DAL.Entities;
 using ServiceStation.DAL.Repositories;
 using ServiceStation.DAL.Repositories.Contracts;
-using FluentValidation;
-using ServiceStation.BLL.DTO.Requests;
-using ServiceStation.BLL.Validation;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
-using Microsoft.OpenApi.Models;
 using System.Reflection;
-using StackExchange.Redis;
-using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
-using Microsoft.Extensions.DependencyInjection;
-using ServiceStation.API.MessageBroker;
-using MassTransit.Configuration;
-using MassTransit;
-using Microsoft.Extensions.Options;
-using ServiceStation.API.MessageBroker.EventBus;
+using System.Text;
 
 internal class Program
 {
@@ -61,7 +58,7 @@ internal class Program
         });
 
         builder.Services.AddScoped<ServiceStation.BLL.EventBus.IEventBus, ServiceStation.BLL.EventBus.EventBus>();
-        builder.Services.AddScoped<IEventBus,EventBus>();
+        builder.Services.AddScoped<IEventBus, EventBus>();
 
 
 
@@ -100,7 +97,7 @@ internal class Program
         });
         builder.Services.AddSwaggerGen(o =>
         {
-            
+
             o.SwaggerDoc("v1", new OpenApiInfo() { Title = "Client Api" });
             o.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
             {
@@ -135,7 +132,7 @@ internal class Program
 
         builder.Services.AddDbContext<ServiceStationDContext>(options =>
         {
-         string connectionString;
+            string connectionString;
             var dbhost = Environment.GetEnvironmentVariable("DB_HOST");
             var dbname = Environment.GetEnvironmentVariable("DB_NAME");
             var dbpass = Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
@@ -199,6 +196,10 @@ internal class Program
                                 };
                             });
 
+
+
+        builder.Services.AddGrpc()/*.AddJsonTranscoding()*/;
+
         var app = builder.Build();
         /*var context = app.Services.GetService<ServiceStationDContext>();
         context.Database.EnsureCreated();*/
@@ -208,6 +209,10 @@ internal class Program
             app.UseSwagger();
             app.UseSwaggerUI();
         }*/
+
+
+        //app.MapGrpcService<ClientSerrvice>();
+
         app.UseSwagger();
         app.UseSwaggerUI();
         app.UseHttpsRedirection();

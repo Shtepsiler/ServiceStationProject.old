@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "ServiceStation.API.Protos";
+package Client;
+
+service ClientProto
+{
+    
+	rpc GetByNameAsync(FindByNameReuest) returns (ClientPublicResponce);
+
+}
+message FindByNameReuest{
+	  string name = 1;
+}
+message ClientPublicResponce{
+	 int32 Id =1;
+     string FirstName=2;
+     string LastName=3;
+     string ClientName =4;
+     string Email=5;
+     string PhoneNumber=6;
+}

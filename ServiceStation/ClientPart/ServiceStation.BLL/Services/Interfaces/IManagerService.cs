@@ -1,11 +1,4 @@
-﻿using ServiceStation.BLL.DTO.Requests;
-using ServiceStation.BLL.DTO.Responses;
-using ServiceStation.DAL.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ServiceStation.BLL.DTO.Responses;
 
 namespace ServiceStation.BLL.Services.Interfaces
 {
@@ -13,6 +6,6 @@ namespace ServiceStation.BLL.Services.Interfaces
     {
         Task<IEnumerable<ManagerResponse>> GetAllAsync();
         Task<ManagerResponse> GetByIdAsync(int id);
-        
+
     }
 }

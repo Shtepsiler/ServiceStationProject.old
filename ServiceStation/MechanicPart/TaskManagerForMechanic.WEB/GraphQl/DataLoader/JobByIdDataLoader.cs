@@ -20,7 +20,7 @@ namespace TaskManagerForMechanic.WEB.GraphQl.DataLoader
                 _dbContextFactory.CreateDbContext();
 
             return await dbContext.Jobs.Where(p => keys.Contains(p.Id)).
-                ToDictionaryAsync(t => t.Id, cancellationToken); 
+                ToDictionaryAsync(t => t.Id, cancellationToken);
 
 
         }

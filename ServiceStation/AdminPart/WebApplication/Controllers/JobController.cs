@@ -1,16 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using FluentValidation;
-
-using Microsoft.AspNetCore.Authorization;
-using System.Data;
-using MediatR;
-using Application.Operations.Jobs.Commands;
+﻿using Application.Common.Validation;
 using Application.DTOs.Respponces;
+using Application.Operations.Jobs.Commands;
 using Application.Operations.Jobs.Queries;
-using Application.Operations.Managers.Commands;
-using Application.Common.Validation;
+using MediatR;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
-using Application.Operations.Clients.Queries;
 
 namespace ServiceStation.API.Controllers
 {

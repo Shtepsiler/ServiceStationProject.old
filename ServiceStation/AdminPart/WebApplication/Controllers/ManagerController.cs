@@ -1,9 +1,6 @@
 ﻿using Application.DTOs.Respponces;
-using Application.Operations.Clients.Queries;
-using Application.Operations.Jobs.Queries;
 using Application.Operations.Managers.Commands;
 using Application.Operations.Managers.Queries;
-using Application.Operations.Models.Commands;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -25,7 +22,7 @@ namespace WebApplication.Controllers
             Mediator = mediator;
             MemoryCache = memoryCache;
         }
-      
+
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]

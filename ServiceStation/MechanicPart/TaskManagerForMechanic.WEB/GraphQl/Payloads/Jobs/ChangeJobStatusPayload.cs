@@ -3,7 +3,7 @@ using TaskManagerForMechanic.WEB.GraphQl.Common.Exceptions;
 
 namespace TaskManagerForMechanic.WEB.GraphQl.Payloads.Jobs
 {
-    public class ChangeJobStatusPayload: JobPayloadBase
+    public class ChangeJobStatusPayload : JobPayloadBase
     {
         public ChangeJobStatusPayload(UserError error)
     : base(new[] { error })

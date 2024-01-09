@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5BFH0DJoZrdvCNDBp5XrxmJCfo+ikIUFvJKNyyJI5rzQtmx0LauN+j9aqLWYSVsE2T9K4lF2bB5rOhgr1sVSTQ==",
+  "dgSpecHash": "Q8mIZvLzs4i7DYqpbNLNPpggpgXN28cKWd00MlN/RwB+bR1vC+e4b75Kc136DGuMipuHSQhOxdlVaNGOrFIUIA==",
   "success": true,
   "projectFilePath": "C:\\Навчання\\OOP\\project\\ServiceStation\\ServiceStation\\ServiceStation\\MechanicPart\\TaskManagerForMechanic.WEB\\TaskManagerForMechanic.WEB.csproj",
   "expectedPackageFiles": [
@@ -36,6 +36,7 @@
     "C:\\Users\\mosso\\.nuget\\packages\\masstransit\\8.1.2\\masstransit.8.1.2.nupkg.sha512",
     "C:\\Users\\mosso\\.nuget\\packages\\masstransit.abstractions\\8.1.2\\masstransit.abstractions.8.1.2.nupkg.sha512",
     "C:\\Users\\mosso\\.nuget\\packages\\masstransit.rabbitmq\\8.1.2\\masstransit.rabbitmq.8.1.2.nupkg.sha512",
+    "C:\\Users\\mosso\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.14\\microsoft.aspnetcore.authentication.jwtbearer.7.0.14.nupkg.sha512",
     "C:\\Users\\mosso\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\mosso\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\mosso\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",

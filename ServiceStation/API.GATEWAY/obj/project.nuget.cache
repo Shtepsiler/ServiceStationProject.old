@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Cmtudu+OIMjNPJtK31QHKeUpAQvqV9JaQfoMPx30Q6huZfLxGL3D1ghE3B8EW3VvMM8gD7ua9amh0S/EmdYCfw==",
+  "dgSpecHash": "VB2ufMha9JHIGta/xblR1EUU3W+QLAP4ZqS/9va/kROCi0bIZ4OiPbHzqh87ko9dt1XVxY233S4OJGD2YDgVcA==",
   "success": true,
   "projectFilePath": "C:\\Навчання\\OOP\\project\\ServiceStation\\ServiceStation\\ServiceStation\\API.GATEWAY\\API.GATEWAY.csproj",
   "expectedPackageFiles": [
@@ -10,8 +10,12 @@
     "C:\\Users\\mosso\\.nuget\\packages\\cachemanager.microsoft.extensions.configuration\\2.0.0-beta-1629\\cachemanager.microsoft.extensions.configuration.2.0.0-beta-1629.nupkg.sha512",
     "C:\\Users\\mosso\\.nuget\\packages\\cachemanager.microsoft.extensions.logging\\2.0.0-beta-1629\\cachemanager.microsoft.extensions.logging.2.0.0-beta-1629.nupkg.sha512",
     "C:\\Users\\mosso\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
+    "C:\\Users\\mosso\\.nuget\\packages\\identitymodel\\4.0.0\\identitymodel.4.0.0.nupkg.sha512",
+    "C:\\Users\\mosso\\.nuget\\packages\\identitymodel.aspnetcore.oauth2introspection\\4.0.1\\identitymodel.aspnetcore.oauth2introspection.4.0.1.nupkg.sha512",
+    "C:\\Users\\mosso\\.nuget\\packages\\identityserver4.accesstokenvalidation\\3.0.1\\identityserver4.accesstokenvalidation.3.0.1.nupkg.sha512",
     "C:\\Users\\mosso\\.nuget\\packages\\ipaddressrange\\6.0.0\\ipaddressrange.6.0.0.nupkg.sha512",
     "C:\\Users\\mosso\\.nuget\\packages\\kros.utils\\2.1.0\\kros.utils.2.1.0.nupkg.sha512",
+    "C:\\Users\\mosso\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.0.0\\microsoft.aspnetcore.authentication.jwtbearer.3.0.0.nupkg.sha512",
     "C:\\Users\\mosso\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.14\\microsoft.aspnetcore.jsonpatch.7.0.14.nupkg.sha512",
     "C:\\Users\\mosso\\.nuget\\packages\\microsoft.aspnetcore.middlewareanalysis\\7.0.14\\microsoft.aspnetcore.middlewareanalysis.7.0.14.nupkg.sha512",
     "C:\\Users\\mosso\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.14\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.14.nupkg.sha512",

@@ -1,13 +1,10 @@
 ﻿using Application.DTOs.Respponces;
-using Application.Operations.Jobs.Queries;
 using Application.Operations.Mechanics.Commands;
 using Application.Operations.Mechanics.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
-using System.Runtime.CompilerServices;
 
 namespace WebApplication.Controllers
 {
@@ -27,7 +24,7 @@ namespace WebApplication.Controllers
         }
 
 
-       
+
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -45,7 +42,7 @@ namespace WebApplication.Controllers
         }
 
 
-       
+
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -63,7 +60,7 @@ namespace WebApplication.Controllers
         }
 
 
-      
+
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]

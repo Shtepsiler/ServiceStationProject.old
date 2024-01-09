@@ -1,25 +1,21 @@
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Infrastructure.Persistence.Data;
 using Application;
-using System.Reflection;
+using Application.EventBusConsumers;
 using Application.Interfaces;
-using MediatR;
-using Microsoft.AspNetCore.Hosting;
-using Application.DTOs.Respponces;
-using Microsoft.OpenApi.Models;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
-using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.DependencyInjection;
+using Domain.Entities;
+using Infrastructure.Persistence.Data;
 using Infrastructure.Persistence.Services;
 using MassTransit;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Options;
-using WebApplication.MessageBroker.EventBus;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
+using System.Text;
 using WebApplication.MessageBroker;
-using Application.EventBusConsumers;
-using Domain.Entities;
+using WebApplication.MessageBroker.EventBus;
 var builder = Microsoft.AspNetCore.Builder.WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -51,14 +47,14 @@ builder.Services.AddMassTransit(busconf =>
             h.Password(settings.Password);
 
         });
-        
+
         conf.ReceiveEndpoint(nameof(GeneralBusMessages.Message.Model), e =>
             {
-                e.ConfigureConsumer(cont,typeof(ModelConsumer));
+                e.ConfigureConsumer(cont, typeof(ModelConsumer));
             });
-    });  
+    });
 
-  
+
 });
 
 
@@ -88,7 +84,7 @@ var securityReq = new OpenApiSecurityRequirement()
 };
 builder.Services.AddSwaggerGen(o =>
 {
-    o.SwaggerDoc("v1", new OpenApiInfo() { Title = "Manager API"});
+    o.SwaggerDoc("v1", new OpenApiInfo() { Title = "Manager API" });
     o.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Type = SecuritySchemeType.Http,
@@ -166,7 +162,7 @@ builder.Services.AddMemoryCache(opt => new MemoryCacheEntryOptions()
     AbsoluteExpiration = DateTime.Now.AddSeconds(30),
     Priority = CacheItemPriority.High,
     SlidingExpiration = TimeSpan.FromSeconds(20)
-}) ;
+});
 
 var app = builder.Build();
 

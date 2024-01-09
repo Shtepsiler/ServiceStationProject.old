@@ -14,7 +14,7 @@ namespace ServiceStation.DAL.Data.Configurations
             builder.Property(p => p.Address).HasMaxLength(255);
             builder.Property(p => p.Phone).HasMaxLength(12).IsFixedLength(true);
             builder.Property(p => p.Specialization);
-            builder.Property(p=>p.PhotoURL).IsRequired(false);
+            builder.Property(p => p.PhotoURL).IsRequired(false);
 
             builder.HasKey(p => p.Id);
         }

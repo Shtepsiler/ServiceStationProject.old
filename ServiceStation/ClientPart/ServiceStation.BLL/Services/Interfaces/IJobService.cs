@@ -1,7 +1,6 @@
 ﻿
 using ServiceStation.BLL.DTO.Requests;
 using ServiceStation.BLL.DTO.Responses;
-using ServiceStation.DAL.Entities;
 
 namespace ServiceStation.BLL.Services.Interfaces
 {

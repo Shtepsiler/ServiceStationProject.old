@@ -1,50 +1,47 @@
-using Ocelot.DependencyInjection;
-using Ocelot.Cache.CacheManager;
-using Ocelot.Middleware;
 using MMLib.SwaggerForOcelot.DependencyInjection;
-using Ocelot.Provider.Polly;
+using Ocelot.DependencyInjection;
+using Ocelot.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+
+//builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 var routes = "./Routes";
-builder.Configuration.AddOcelotWithSwaggerSupport(p=>p.Folder = routes);
+builder.Configuration.AddOcelotWithSwaggerSupport(p => p.Folder = routes);
 
 //builder.Configuration.AddJsonFile("configuration.json", optional: false, reloadOnChange: true);
 builder.Services.AddSwaggerForOcelot(builder.Configuration);
 /*builder.Services.AddCors();
 */
 builder.Services.AddOcelot();
-
-
-
-
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
     app.UseSwagger();
-    app.UseSwaggerUI(c =>
+    app.UseSwaggerUI(e =>
     {
-       /* c.SwaggerEndpoint("/swagger/v1/swagger.json", "API");
-        c.SwaggerEndpoint("/client/swagger/v1/swagger.json", "Client API");
-        c.SwaggerEndpoint("/manager/swagger/v1/swagger.json", "Manager API");*/
+      /*  e.SwaggerEndpoint("/swagger/v1/swagger.json", "gateway");
+        e.SwaggerEndpoint("/client/swagger/v1/swagger.json", "client");
+        e.SwaggerEndpoint("/manager/swagger/v1/swagger.json", "manager");*/
+            
     });
-app.UseStaticFiles();
+}
 
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
+app.MapControllers();
 app.UseSwaggerForOcelotUI(opt =>
 {
     opt.PathToSwaggerGenerator = "/swagger/docs";
 });
-
-app.UseCors();
-
- await app.UseOcelot();
-app.UseRouting();
-app.UseHttpsRedirection();
-
+await app.UseOcelot();
 
 app.Run();

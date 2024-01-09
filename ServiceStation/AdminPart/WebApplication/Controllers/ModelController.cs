@@ -1,24 +1,18 @@
 ﻿using Application.DTOs.Respponces;
-using Application.Operations.Jobs.Queries;
-using Application.Operations.Mechanics.Queries;
 using Application.Operations.Models.Commands;
 using Application.Operations.Models.Queries;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
-using System.Runtime.CompilerServices;
-using WebApplication.MessageBroker.EventBus;
 
 namespace WebApplication.Controllers
 {
-  
+
     [Route("api/[controller]")]
     [ApiController]
     public class ModelController : ControllerBase
     {
-       
+
         private IMediator Mediator { get; }
         private readonly IMemoryCache MemoryCache;
 
@@ -26,7 +20,7 @@ namespace WebApplication.Controllers
         {
             Mediator = mediator;
             MemoryCache = memoryCache;
-           
+
         }
 
         [HttpDelete("{id}")]

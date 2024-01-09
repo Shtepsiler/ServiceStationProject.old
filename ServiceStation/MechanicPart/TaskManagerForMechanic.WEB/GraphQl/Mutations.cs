@@ -41,7 +41,7 @@ namespace TaskManagerForMechanic.WEB.GraphQl
 
 
             var task = context.MechanicsTasks.Find(intut.id);
-            if(task == null)
+            if (task == null)
             {
                 throw new Exception();
             }
@@ -50,8 +50,8 @@ namespace TaskManagerForMechanic.WEB.GraphQl
             task.JobId = intut.JobId;
             task.Status = intut.Status;
             task.Task = intut.Task;
-         
-           
+
+
             await context.SaveChangesAsync();
 
             return new ChangeMechanicsTaskPayload(task);
@@ -90,7 +90,7 @@ ChangeTaskStatusInput intut,
                 [Service] ITopicEventSender eventSender)
         {
             var job = context.Jobs.Find(input.id);
-            if(job == null)
+            if (job == null)
             {
                 throw new Exception();
             }

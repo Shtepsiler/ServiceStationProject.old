@@ -20,7 +20,7 @@ namespace TaskManagerForMechanic.WEB.GraphQl.Types
 
             descriptor
                 .Field(t => t.Jobs)
-              //  .UsePaging()
+                //  .UsePaging()
                 .ResolveWith<MechanicResolvers>(t => t.GetJobsAsync(default!, default!, default!, default))
                 .UseDbContext<TaskManagerDbContext>()
                 .Name("job");

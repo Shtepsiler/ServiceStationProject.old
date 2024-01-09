@@ -6,5 +6,5 @@
         int? JobId,
         string Task,
         string Status);
-    
+
 }

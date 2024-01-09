@@ -1,11 +1,6 @@
-﻿using MassTransit;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Application.Interfaces;
 using GeneralBusMessages.Message;
-using Application.Interfaces;
+using MassTransit;
 
 namespace Application.EventBusConsumers
 {
@@ -20,7 +15,7 @@ namespace Application.EventBusConsumers
 
         public Task Consume(ConsumeContext<Model> context)
         {
-            _context.Models.AddAsync(new(context.Message.Name ));
+            _context.Models.AddAsync(new(context.Message.Name));
             _context.SaveChangesAsync();
             return Task.CompletedTask;
         }

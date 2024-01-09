@@ -10,7 +10,7 @@ namespace ServiceStation.DAL.Data.Configurations
         {
             builder.Property(p => p.Id).UseIdentityColumn();
             builder.Property(p => p.Name).HasMaxLength(50);
-  
+
             builder.HasKey(p => p.Id);
 
         }

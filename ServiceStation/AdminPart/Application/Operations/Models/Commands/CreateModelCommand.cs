@@ -1,7 +1,6 @@
 ﻿using Application.Interfaces;
 using Domain.Entities;
 using MediatR;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Application.Operations.Models.Commands
 {

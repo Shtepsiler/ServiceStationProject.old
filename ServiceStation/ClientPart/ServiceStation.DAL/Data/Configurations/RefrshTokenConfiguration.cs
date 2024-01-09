@@ -1,12 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ServiceStation.DAL.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace ServiceStation.DAL.Data.Configurations
 {
@@ -21,7 +15,7 @@ namespace ServiceStation.DAL.Data.Configurations
 
             builder.HasKey(p => p.Id);
 
-            builder.HasOne(p => p.Client).WithOne(p => p.RefreshToken).HasForeignKey<RefreshToken>(p=>p.ClientName).HasPrincipalKey<Client>(p=>p.UserName).HasConstraintName("FK_Client_Token");
+            builder.HasOne(p => p.Client).WithOne(p => p.RefreshToken).HasForeignKey<RefreshToken>(p => p.ClientName).HasPrincipalKey<Client>(p => p.UserName).HasConstraintName("FK_Client_Token");
         }
     }
 }

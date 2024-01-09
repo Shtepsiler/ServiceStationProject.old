@@ -1,6 +1,4 @@
-﻿using MassTransit.Configuration;
-
-namespace ServiceStation.API.MessageBroker
+﻿namespace ServiceStation.API.MessageBroker
 {
     public class MessageBrokerSettings
     {

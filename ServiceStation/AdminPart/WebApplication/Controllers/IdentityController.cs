@@ -1,9 +1,7 @@
 ﻿using Application.DTOs.Respponces;
 using Application.Operations.Managers.Commands;
 using Domain.Exeptions;
-using FluentValidation;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 

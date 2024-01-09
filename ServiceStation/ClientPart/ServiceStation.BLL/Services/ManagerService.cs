@@ -1,14 +1,8 @@
 ﻿using AutoMapper;
-using ServiceStation.BLL.DTO.Requests;
 using ServiceStation.BLL.DTO.Responses;
 using ServiceStation.BLL.Services.Interfaces;
 using ServiceStation.DAL.Entities;
 using ServiceStation.DAL.Repositories.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ServiceStation.BLL.Services
 {
@@ -28,14 +22,14 @@ namespace ServiceStation.BLL.Services
             List<Manager> results;
             try
             {
-                results = (List<Manager>) await _unitOfWork._ManagerRepository.GetAsync();
-         
+                results = (List<Manager>)await _unitOfWork._ManagerRepository.GetAsync();
+
             }
             catch (Exception ex)
             {
                 return null;
-            }    
-            return _maper.Map<List<Manager>,List<ManagerResponse>>(results);
+            }
+            return _maper.Map<List<Manager>, List<ManagerResponse>>(results);
         }
 
         public async Task<ManagerResponse> GetByIdAsync(int id)
@@ -60,7 +54,7 @@ namespace ServiceStation.BLL.Services
         }
 
 
-       
+
 
     }
 }

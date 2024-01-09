@@ -1,9 +1,7 @@
 ﻿using FluentValidation;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ServiceStation.BLL.DTO.Requests;
 using ServiceStation.BLL.DTO.Responses;
-using ServiceStation.BLL.Services;
 using ServiceStation.BLL.Services.Interfaces;
 using ServiceStation.DAL.Exceptions;
 
@@ -62,7 +60,7 @@ namespace ServiceStation.API.Controllers
                 if (!_SingUpValidator.Validate(request).IsValid) { throw new Exception(nameof(request)); }
 
                 var response = await _UnitOfBisnes._IdentityService.SignUpAsync(request);
-                
+
                 return Ok(response);
             }
             catch (Exception e)
@@ -80,7 +78,7 @@ namespace ServiceStation.API.Controllers
 
 
 
-        public IdentityController(IUnitOfBisnes UnitOfBisnes, IValidator<ClientSignInRequest> singinvalidator, IValidator<ClientSignUpRequest>  singupvalidator)
+        public IdentityController(IUnitOfBisnes UnitOfBisnes, IValidator<ClientSignInRequest> singinvalidator, IValidator<ClientSignUpRequest> singupvalidator)
         {
             this._UnitOfBisnes = UnitOfBisnes;
             this._SingInValidator = singinvalidator;
@@ -90,5 +88,5 @@ namespace ServiceStation.API.Controllers
 
 
         }
-        }
+    }
 }

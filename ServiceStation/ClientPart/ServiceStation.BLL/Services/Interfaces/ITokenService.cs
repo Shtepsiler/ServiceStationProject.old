@@ -1,12 +1,5 @@
-﻿using ServiceStation.BLL.DTO.Responses;
-using ServiceStation.DAL.Entities;
-using System;
-using System.Collections.Generic;
+﻿using ServiceStation.DAL.Entities;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ServiceStation.BLL.Services.Interfaces
 {

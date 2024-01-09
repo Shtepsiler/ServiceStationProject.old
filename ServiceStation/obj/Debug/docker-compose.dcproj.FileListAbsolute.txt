@@ -2,8 +2,11 @@ C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\API.GATEWAY.runtimeconfig.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\appsettings.Development.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\appsettings.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\ocelot.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Routes\ocelot.clientapi.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Routes\ocelot.global.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Routes\ocelot.manager.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Routes\ocelot.mechanicapi.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Routes\ocelot.SwaggerEndPoints.json
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\API.GATEWAY.exe
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\ServiceStation.API.deps.json
@@ -22,8 +25,8 @@ C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\WebApplication.dll
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\MMLib.SwaggerForOcelot.dll
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Ocelot.dll
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Ocelot.dll
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Microsoft.OpenApi.dll
@@ -117,10 +120,15 @@ C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\obj\Debug\docker-compose.dcproj.CopyComplete
-C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Routes\ocelot.clientapi.json
-C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Routes\ocelot.mechanicapi.json
-<<<<<<< HEAD
-=======
-C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\configuration.json
->>>>>>> 9962e94071c44cc0896355cfdc8e0ef2d4175fd9
-C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\ocelot.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Grpc.AspNetCore.Server.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Grpc.Core.Api.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Grpc.Net.Common.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\MechanicIdentiyServer.deps.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\MechanicIdentiyServer.runtimeconfig.json
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\MechanicIdentiyServer.exe
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\MechanicIdentiyServer.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\IdentityServer4.Storage.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\IdentityServer4.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\IdentityModel.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Навчання\OOP\project\ServiceStation\ServiceStation\ServiceStation\bin\Debug\MechanicIdentiyServer.pdb

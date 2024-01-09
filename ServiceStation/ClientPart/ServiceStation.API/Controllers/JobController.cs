@@ -1,15 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using ServiceStation.DAL.Entities;
-
-using ServiceStation.BLL.Services.Interfaces;
-using ServiceStation.BLL.DTO.Responses;
-using ServiceStation.BLL.DTO.Requests;
-using Microsoft.AspNetCore.Authorization;
-using System.Data;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
-using System.Text;
 using ServiceStation.API.MessageBroker.EventBus;
+using ServiceStation.BLL.DTO.Requests;
+using ServiceStation.BLL.DTO.Responses;
+using ServiceStation.BLL.Services.Interfaces;
+using System.Text;
 
 namespace ServiceStation.API.Controllers
 {
@@ -168,7 +165,7 @@ namespace ServiceStation.API.Controllers
                     return BadRequest("Обєкт івенту є некоректним");
                 }
                 await _UnitOfBisnes._JobService.PostNewJobAsync(job);
-                
+
 
                 return StatusCode(StatusCodes.Status201Created);
             }

@@ -1,25 +1,16 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Primitives;
-using Microsoft.IdentityModel.Tokens;
-using ServiceStation.BLL.DTO.Responses;
 using ServiceStation.BLL.Factories.Interfaces;
 using ServiceStation.BLL.Services.Interfaces;
 using ServiceStation.DAL.Entities;
 using ServiceStation.DAL.Repositories.Contracts;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ServiceStation.BLL.Services
 {
     public class TokenService : ITokenService
     {
         private readonly IUnitOfWork unitOfWork;
-        private readonly IConfiguration configuration; 
+        private readonly IConfiguration configuration;
         private readonly IJwtSecurityTokenFactory tokenFactory;
 
 
@@ -32,7 +23,7 @@ namespace ServiceStation.BLL.Services
         public string SerializeToken(JwtSecurityToken jwtToken) =>
     new JwtSecurityTokenHandler().WriteToken(jwtToken);
 
-       public JwtSecurityToken BuildToken(Client client) => tokenFactory.BuildToken(client);
+        public JwtSecurityToken BuildToken(Client client) => tokenFactory.BuildToken(client);
 
 
 
@@ -40,23 +31,25 @@ namespace ServiceStation.BLL.Services
         {
 
             try
-            {       
-               var token = unitOfWork._TokenRepository.GeTokenByToken(refreshToken);
+            {
+                var token = unitOfWork._TokenRepository.GeTokenByToken(refreshToken);
 
-                if (token.Result == null) {
+                if (token.Result == null)
+                {
 
                     throw new UnauthorizedAccessException("token is not to be)");
                 }
-                if(token.Result.ExpirationDate <= DateTime.Now)
+                if (token.Result.ExpirationDate <= DateTime.Now)
                 {
                     unitOfWork._TokenRepository.DeleteTokenByClientName(token.Result.ClientName);
                     unitOfWork.SaveChangesAsync();
                     throw new UnauthorizedAccessException("Refresh Token is expired,it will be deleted");
                 }
 
-              var client  = unitOfWork._ClientManager.FindByNameAsync(token.Result.ClientName);
+                var client = unitOfWork._ClientManager.FindByNameAsync(token.Result.ClientName);
 
-                if (client.Result == null) {
+                if (client.Result == null)
+                {
                     throw new NullReferenceException($"{nameof(client)} is not excist");
                 }
 
@@ -81,7 +74,7 @@ namespace ServiceStation.BLL.Services
                 unitOfWork._TokenRepository.DeleteTokenByClientName(clientName);
                 unitOfWork.SaveChangesAsync();
             }
-            catch(Exception ex) { throw ex; }   
+            catch (Exception ex) { throw ex; }
 
         }
 
@@ -99,16 +92,16 @@ namespace ServiceStation.BLL.Services
                     return newguid.ToString();
 
                 }
-                
-                if (ifrexisttoken.Result.ExpirationDate<DateTime.Now)
+
+                if (ifrexisttoken.Result.ExpirationDate < DateTime.Now)
                 {
                     DeleteRefreshToken(username);
 
-                throw new Exception("Token is Expirationed it will be deleted you must login again");
+                    throw new Exception("Token is Expirationed it will be deleted you must login again");
 
 
                 }
-                    return ifrexisttoken.Result.ClientSecret;
+                return ifrexisttoken.Result.ClientSecret;
 
             }
             catch (Exception ex)
@@ -117,7 +110,7 @@ namespace ServiceStation.BLL.Services
             }
 
         }
-    
+
 
 
         /*
